@@ -9,7 +9,7 @@ function App() {
         <h2>Organize your Backpack for your next Hike</h2>
         <button>add item to backpack</button>
         <br />
-        <button>remov item from backpack</button>
+        <button>remove item from backpack</button>
 
       </header>
     </div>
