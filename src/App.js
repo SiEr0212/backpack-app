@@ -1,5 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
@@ -10,7 +10,6 @@ function App() {
         <button>add item to backpack</button>
         <br />
         <button>remove item from backpack</button>
-
       </header>
     </div>
   );
