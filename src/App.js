@@ -4,11 +4,10 @@ import React, { useState } from 'react';
 
 function App() {
   const [number1, setNumber1] = useState(0);
-  const [number2, setNumber2] = useState(0);
-  const [total, setTotal] = useState(number1 + number2);
+  const [total, setTotal] = useState(0 + number1);
 
   function calculateTotal() {
-    setTotal(number1 + number2);
+    setTotal( 0 + number1);
   }
 
   return (
@@ -24,16 +23,11 @@ function App() {
           onChange={e => setNumber1(+e.target.value)}
           placeholder="0"
         />
-        <br />
-        <input
-          type="number"
-          value={number2}
-          onChange={e => setNumber2(+e.target.value)}
-          placeholder="0"
-        />
+       
+        
       </div>
 
-      <button onClick={calculateTotal}>Add Them!</button>
+      <button onClick={calculateTotal}>Add to the Backpack!</button>
 
       <h2>Total weight: {total}kg</h2>
       </header>
