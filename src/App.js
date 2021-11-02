@@ -41,7 +41,7 @@ function App() {
   }
 
   function calculateTotal(e) {
-    setTotal(e + weight);
+    setTotal(weight);
   }
 
 
@@ -58,7 +58,7 @@ function App() {
         <div>
           <input type="text" value={name} onChange={handleChange} />
           <input type="number" value={weight} onChange={handleWeightChange} />
-          <button type="button" onClick={handleAdd,calculateTotal}>
+          <button type="button" onClick={handleAdd}>
             Add to the Backpack!
           </button>
         </div>
