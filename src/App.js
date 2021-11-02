@@ -7,12 +7,12 @@ const initialList = [
   {
     id: "a",
     name: "Sleepingbag",
-    weight: 1,
+    weight: 1000,
   },
   {
     id: "b",
     name: "Tent",
-    weight: 1,
+    weight: 2000,
   },
 ];
 
@@ -20,6 +20,7 @@ function App() {
   const [list, setList] = useState(initialList);
   const [name, setName] = useState("");
   const [weight, setWeight] = useState(0);
+  const [total, setTotal] = useState(0);
 
 
   function handleChange(e) {
@@ -39,6 +40,12 @@ function App() {
     setName("");
   }
 
+  function calculateTotal(e) {
+    setTotal(e + weight);
+  }
+
+
+
   return (
     <div className="App">
       <header className="App-header">
@@ -51,17 +58,17 @@ function App() {
         <div>
           <input type="text" value={name} onChange={handleChange} />
           <input type="number" value={weight} onChange={handleWeightChange} />
-          <button type="button" onClick={handleAdd}>
+          <button type="button" onClick={handleAdd,calculateTotal}>
             Add to the Backpack!
           </button>
         </div>
         <ul>
           {list.map((item) => (
-            <li key={item.id}>{item.name} {item.weight}</li>
+            <li key={item.id}>{item.name} {item.weight} g</li>
           ))}
         </ul>
 
-        <h2>Total weight: 0kg</h2>
+        <h2>Total weight: {total} kg</h2>
       </header>
     </div>
   );
