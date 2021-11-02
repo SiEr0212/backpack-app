@@ -1,34 +1,42 @@
 import logo from "./logo.svg";
 import "./App.css";
 import React, { useState } from "react";
-import { v4 as uuidv4 } from 'uuid';
-
+import { v4 as uuidv4 } from "uuid";
 
 const initialList = [
   {
     id: "a",
     name: "Sleepingbag",
+    weight: 1,
   },
   {
     id: "b",
     name: "Tent",
+    weight: 1,
   },
 ];
 
 function App() {
   const [list, setList] = useState(initialList);
   const [name, setName] = useState("");
+  const [weight, setWeight] = useState(0);
+
 
   function handleChange(e) {
     setName(e.target.value);
+   
+  }
+
+  function handleWeightChange(e){
+    setWeight(e.target.value)
   }
 
   function handleAdd() {
-    const newList = list.concat({ name, id: uuidv4() });
- 
+    const newList = list.concat({ weight, name, id: uuidv4() });
+
     setList(newList);
- 
-    setName('');
+
+    setName("");
   }
 
   return (
@@ -42,13 +50,14 @@ function App() {
         <br />
         <div>
           <input type="text" value={name} onChange={handleChange} />
+          <input type="number" value={weight} onChange={handleWeightChange} />
           <button type="button" onClick={handleAdd}>
             Add to the Backpack!
           </button>
         </div>
         <ul>
           {list.map((item) => (
-            <li key={item.id}>{item.name}</li>
+            <li key={item.id}>{item.name} {item.weight}</li>
           ))}
         </ul>
 
