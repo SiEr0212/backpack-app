@@ -16,11 +16,7 @@ function App() {
       <header className="App-header">
         <h1>Backpack App</h1>
         <h2>Organize your Backpack for your next Hike</h2>
-        <button>add item to backpack</button>
-        <br />
-        <br />
-        <button>remove item from backpack</button>
-        <br />
+        
         <div className="number-inputs">
         <input
           type="number"
@@ -28,6 +24,7 @@ function App() {
           onChange={e => setNumber1(+e.target.value)}
           placeholder="0"
         />
+        <br />
         <input
           type="number"
           value={number2}
@@ -38,7 +35,7 @@ function App() {
 
       <button onClick={calculateTotal}>Add Them!</button>
 
-      <h2>{total}</h2>
+      <h2>Total weight: {total}kg</h2>
       </header>
     </div>
   );
