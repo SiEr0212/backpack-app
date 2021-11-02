@@ -23,7 +23,9 @@ function App() {
   }
  
   function handleAdd() {
-    // add item
+    const newList = list.concat({ name });
+ 
+    setList(newList);
   }
 
   return (
