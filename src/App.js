@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import React, { useState } from "react";
-mport { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from 'uuid';
 
 
 const initialList = [
@@ -24,9 +24,11 @@ function App() {
   }
 
   function handleAdd() {
-    const newList = list.concat({ name });
-
+    const newList = list.concat({ name, id: uuidv4() });
+ 
     setList(newList);
+ 
+    setName('');
   }
 
   return (
