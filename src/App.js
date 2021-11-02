@@ -16,9 +16,10 @@ const initialList = [
 
 function App() {
   const [list, setList] = useState(initialList);
+  const [name, setName] = useState('');
 
-  function handleChange() {
-    // track input field's state
+  function handleChange(e) {
+    setName(e.target.value);
   }
  
   function handleAdd() {
@@ -37,9 +38,9 @@ function App() {
         <br />
         <br />
         <div>
-          <input type="text" onChange={handleChange} />
+        <input type="text" value={name} onChange={handleChange} />
           <button type="button" onClick={handleAdd}>
-            Add
+          Add to the Backpack!
           </button>
         </div>
         <ul>
@@ -52,7 +53,7 @@ function App() {
 
 
 
-      <button>Add to the Backpack!</button>
+     
 
       <h2>Total weight: 0kg</h2>
       </header>
