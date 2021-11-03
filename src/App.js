@@ -59,7 +59,7 @@ function App() {
         <br />
         <br />
         <div>
-          <input type="text" value={name} onChange={handleChange}/>
+          <input   placeholder="Please enter Item name" type="text" value={name} onChange={handleChange}/>
           <input type="number" value={weight} onChange={handleWeightChange} />
           <Button variant="contained" type="button" onClick={handleAdd}>
             Add to the Backpack!
