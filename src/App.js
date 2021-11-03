@@ -61,18 +61,18 @@ function App() {
         <div>
           <input type="text" value={name} onChange={handleChange}/>
           <input type="number" value={weight} onChange={handleWeightChange} />
-          <button type="button" onClick={handleAdd}>
+          <Button type="button" onClick={handleAdd}>
             Add to the Backpack!
-          </button>
+          </Button>
         </div>
         <ul>
           {list.map((item) => (
             <li key={item.id}>
               {item.name} {item.weight} g
               <br />
-              <button type="button" onClick={() => handleRemove(item.id)}>
+              <Button type="button" onClick={() => handleRemove(item.id)}>
                 Remove
-              </button>
+              </Button>
             </li>
           ))}
         </ul>
