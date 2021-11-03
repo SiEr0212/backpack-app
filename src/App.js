@@ -42,26 +42,6 @@ function App() {
     setName("");
   }
 
-  /*const meals = [
-    { calorie: 10},
-    { calorie: 15},
-    { calorie: 20}
-  ]; 
-  const weightTotal = total.reduce((weightTotal, total) => totalCalories + meal.calorie, 0);
-  
-  console.log(calorieTotal); // 45 calories
-  
-  const mealsAsStrings = [
-    { calorie: '11'},
-    { calorie: '12'},
-    { calorie: '13'}
-  ];
-  
-  const calorieStringTotal = mealsAsStrings.reduce((totalCalories, meal) => totalCalories + parseInt(meal.calorie, 10), 0);
-  
-  console.log(calorieStringTotal); // 36 calories
-*/
-
   return (
     <div className="App">
       <header className="App-header">
