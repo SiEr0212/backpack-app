@@ -61,7 +61,7 @@ function App() {
         <div>
           <input type="text" value={name} onChange={handleChange}/>
           <input type="number" value={weight} onChange={handleWeightChange} />
-          <Button type="button" onClick={handleAdd}>
+          <Button variant="contained" type="button" onClick={handleAdd}>
             Add to the Backpack!
           </Button>
         </div>
