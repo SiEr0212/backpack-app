@@ -24,7 +24,7 @@ function App() {
 
   let finalWeightTotal = 0;
   const weightTotal = list.map((c) => (finalWeightTotal += +c.weight));
-
+  console.log(list)
 
   function handleChange(e) {
     setName(e.target.value);
@@ -40,6 +40,10 @@ function App() {
     setList(newList);
 
     setName("");
+  }
+
+  function handleRemove() {
+    // remove item
   }
 
   return (
@@ -65,6 +69,9 @@ function App() {
             </li>
           ))}
         </ul>
+        <button type="button" onClick={handleRemove}>
+            Remove
+          </button>
 
         <h2>Total weight: {finalWeightTotal / 1000} kg</h2>
       </header>
