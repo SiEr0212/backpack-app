@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
+import Button from '@mui/material/Button';
 
 const initialList = [
   {
@@ -58,7 +59,7 @@ function App() {
         <br />
         <br />
         <div>
-          <input type="text" value={name} onChange={handleChange} />
+          <input type="text" value={name} onChange={handleChange}/>
           <input type="number" value={weight} onChange={handleWeightChange} />
           <button type="button" onClick={handleAdd}>
             Add to the Backpack!
