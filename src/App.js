@@ -16,20 +16,30 @@ const initialList = [
   },
 ];
 
+
 function App() {
+  
   const [list, setList] = useState(initialList);
   const [name, setName] = useState("");
   const [weight, setWeight] = useState(0);
   const [total, setTotal] = useState(0);
 
+  let finalTotal = 0
+
+  const weightTotal = list.map(c=>finalTotal += + c.weight);
+  console.log(finalTotal)
+
+  
+  console.log(list)
+
+  //console.log(initialList.map(x => console.log(x.weight)));
 
   function handleChange(e) {
     setName(e.target.value);
-   
   }
 
-  function handleWeightChange(e){
-    setWeight(e.target.value)
+  function handleWeightChange(e) {
+    setWeight(e.target.value);
   }
 
   function handleAdd() {
@@ -44,7 +54,25 @@ function App() {
     setTotal(weight);
   }
 
-
+  /*const meals = [
+    { calorie: 10},
+    { calorie: 15},
+    { calorie: 20}
+  ]; 
+  const weightTotal = total.reduce((weightTotal, total) => totalCalories + meal.calorie, 0);
+  
+  console.log(calorieTotal); // 45 calories
+  
+  const mealsAsStrings = [
+    { calorie: '11'},
+    { calorie: '12'},
+    { calorie: '13'}
+  ];
+  
+  const calorieStringTotal = mealsAsStrings.reduce((totalCalories, meal) => totalCalories + parseInt(meal.calorie, 10), 0);
+  
+  console.log(calorieStringTotal); // 36 calories
+*/
 
   return (
     <div className="App">
@@ -64,11 +92,13 @@ function App() {
         </div>
         <ul>
           {list.map((item) => (
-            <li key={item.id}>{item.name} {item.weight} g</li>
+            <li key={item.id}>
+              {item.name} {item.weight} g
+            </li>
           ))}
         </ul>
 
-        <h2>Total weight: {total} kg</h2>
+        <h2>Total weight: {finalTotal} kg</h2>
       </header>
     </div>
   );
