@@ -3,6 +3,7 @@ import "./App.css";
 import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import Button from '@mui/material/Button';
+import TextField from '@mui/material/TextField'
 
 const initialList = [
   {
@@ -59,7 +60,7 @@ function App() {
         <br />
         <br />
         <div>
-          <input   placeholder="Please enter Item name" type="text" value={name} onChange={handleChange} />
+          <TextField id="outlined-basic" label="Item name" variant="outlined"  color="secondary" placeholder="Please enter Item name" type="text" value={name} onChange={handleChange} />
           <input   value={weight} onChange={handleWeightChange} />
           <Button variant="contained" type="button" onClick={handleAdd}>
             Add to the Backpack!
