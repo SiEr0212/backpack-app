@@ -66,19 +66,21 @@ function App() {
             variant="outlined"
             color="secondary"
             placeholder="Please enter Item name"
-            sx={{ bgcolor: 'white' }}
+            sx={{ bgcolor: "white" }}
             type="text"
             value={name}
             onChange={handleChange}
           />
-          <TextField 
-          id="outlined-basic"
+          <TextField
+            id="outlined-basic"
             label="Item Weight in gramms"
             variant="outlined"
             color="secondary"
             placeholder="Eenter Item weight in g"
-            sx={{ bgcolor: 'white' }}
-          value={weight} onChange={handleWeightChange} />
+            sx={{ bgcolor: "white" }}
+            value={weight}
+            onChange={handleWeightChange}
+          />
           <Button variant="contained" type="button" onClick={handleAdd}>
             Add to the Backpack!
           </Button>
