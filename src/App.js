@@ -65,14 +65,16 @@ function App() {
         <ul>
           {list.map((item) => (
             <li key={item.id}>
-              {item.name} {item.weight} g
+              {item.name} {item.weight} g 
+              <br />
+              <button type="button" onClick={() => handleRemove(item.id)}>
+              Remove
+             </button>
+
             </li>
           ))}
         </ul>
-        <button type="button" onClick={handleRemove}>
-            Remove
-          </button>
-
+        
         <h2>Total weight: {finalWeightTotal / 1000} kg</h2>
       </header>
     </div>
