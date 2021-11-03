@@ -70,7 +70,7 @@ function App() {
             <li key={item.id}>
               {item.name} {item.weight} g
               <br />
-              <Button type="button" onClick={() => handleRemove(item.id)}>
+              <Button variant="contained" type="button" onClick={() => handleRemove(item.id)}>
                 Remove
               </Button>
             </li>
