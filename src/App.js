@@ -22,13 +22,9 @@ function App() {
   const [weight, setWeight] = useState(0);
   const [total, setTotal] = useState(0);
 
-  let finalTotal = 0;
+  let finalWeightTotal = 0;
+  const weightTotal = list.map((c) => (finalWeightTotal += +c.weight));
 
-  const weightTotal = list.map((c) => (finalTotal += +c.weight));
-
-  //console.log(list.map((w) => [w.weight].flat()));
-
-  //const weightTotalReduce = list.map()
 
   function handleChange(e) {
     setName(e.target.value);
@@ -90,7 +86,7 @@ function App() {
           ))}
         </ul>
 
-        <h2>Total weight: {finalTotal / 1000} kg</h2>
+        <h2>Total weight: {finalWeightTotal / 1000} kg</h2>
       </header>
     </div>
   );
