@@ -16,23 +16,19 @@ const initialList = [
   },
 ];
 
-
 function App() {
-  
   const [list, setList] = useState(initialList);
   const [name, setName] = useState("");
   const [weight, setWeight] = useState(0);
   const [total, setTotal] = useState(0);
 
-  let finalTotal = 0
+  let finalTotal = 0;
 
-  const weightTotal = list.map(c=>finalTotal += + c.weight);
-  console.log(finalTotal)
+  const weightTotal = list.map((c) => (finalTotal += +c.weight));
 
-  
-  console.log(list)
+  //console.log(list.map((w) => [w.weight].flat()));
 
-  //console.log(initialList.map(x => console.log(x.weight)));
+  //const weightTotalReduce = list.map()
 
   function handleChange(e) {
     setName(e.target.value);
@@ -48,10 +44,6 @@ function App() {
     setList(newList);
 
     setName("");
-  }
-
-  function calculateTotal(e) {
-    setTotal(weight);
   }
 
   /*const meals = [
@@ -98,7 +90,7 @@ function App() {
           ))}
         </ul>
 
-        <h2>Total weight: {finalTotal} kg</h2>
+        <h2>Total weight: {finalTotal / 1000} kg</h2>
       </header>
     </div>
   );
