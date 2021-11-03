@@ -42,8 +42,10 @@ function App() {
     setName("");
   }
 
-  function handleRemove() {
-    // remove item
+  function handleRemove(id) {
+    const newList = list.filter((item) => item.id !== id);
+ 
+    setList(newList);
   }
 
   return (
