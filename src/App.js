@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
+import Card from "@mui/material/Card";
 
 const initialList = [
   {
@@ -84,6 +85,7 @@ function App() {
             Add to the Backpack!
           </Button>
         </div>
+        <Card variant="outlined">{card}</Card>
         <ul>
           {list.map((item) => (
             <li key={item.id}>
