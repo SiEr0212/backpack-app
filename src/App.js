@@ -81,8 +81,9 @@ function App() {
             sx={{ bgcolor: "white" }}
             value={weight}
             onChange={handleWeightChange}
+            style={{ margin: "20px" }}
           />
-          <Button variant="contained" type="button" onClick={handleAdd}>
+          <Button variant="contained" type="button" onClick={handleAdd} >
             Add to the Backpack!
           </Button>
         </div>
