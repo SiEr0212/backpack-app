@@ -4,6 +4,8 @@ import { v4 as uuidv4 } from "uuid";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import Card from "@mui/material/Card";
+import Rating from "@mui/material/Rating";
+import Typography from "@mui/material/Typography";
 
 const initialList = [
   {
@@ -23,6 +25,7 @@ function App() {
   const [name, setName] = useState("");
   const [weight, setWeight] = useState(0);
   const [total, setTotal] = useState(0);
+  const [value, setValue] = useState(0);
 
   let finalWeightTotal = 0;
   const weightTotal = list.map((c) => (finalWeightTotal += +c.weight));
@@ -113,6 +116,20 @@ function App() {
         </Card>
 
         <h2>Total weight: {finalWeightTotal / 1000} kg</h2>
+        <Typography component="legend">Controlled</Typography>
+<Rating
+  name="simple-controlled"
+  value={value}
+  onChange={(event, newValue) => {
+    setValue(newValue);
+  }}
+/>
+<Typography component="legend">Read only</Typography>
+<Rating name="read-only" value={value} readOnly />
+<Typography component="legend">Disabled</Typography>
+<Rating name="disabled" value={value} disabled />
+<Typography component="legend">No rating given</Typography>
+<Rating name="no-value" value={null} />
       </header>
     </div>
   );
