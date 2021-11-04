@@ -88,22 +88,21 @@ function App() {
         <br />
         <br />
         <Card variant="outlined">
-        <ul style={{ listStyleType: "none" }}>
-          {list.map((item) => (
-            <li key={item.id}>
-              {item.name} {item.weight} g
-              <br />
-              <Button
-                variant="contained"
-                type="button"
-                onClick={() => handleRemove(item.id)}
-              >
-                Remove
-              </Button>
-            </li>
-          ))}
-        </ul>
-
+          <ul style={{ listStyleType: "none" }}>
+            {list.map((item) => (
+              <li key={item.id}>
+                {item.name} {item.weight} g
+                <br />
+                <Button
+                  variant="contained"
+                  type="button"
+                  onClick={() => handleRemove(item.id)}
+                >
+                  Remove
+                </Button>
+              </li>
+            ))}
+          </ul>
         </Card>
 
         <h2>Total weight: {finalWeightTotal / 1000} kg</h2>
