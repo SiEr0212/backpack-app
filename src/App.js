@@ -85,6 +85,8 @@ function App() {
             Add to the Backpack!
           </Button>
         </div>
+        <br />
+        
         <Card variant="outlined">
         <ul>
           {list.map((item) => (
