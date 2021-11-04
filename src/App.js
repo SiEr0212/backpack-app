@@ -83,7 +83,12 @@ function App() {
             onChange={handleWeightChange}
             style={{ margin: "20px" }}
           />
-          <Button variant="contained" type="button" onClick={handleAdd} style={{ margin: "30px" }}>
+          <Button
+            variant="contained"
+            type="button"
+            onClick={handleAdd}
+            style={{ margin: "30px" }}
+          >
             Add to the Backpack!
           </Button>
         </div>
