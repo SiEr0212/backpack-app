@@ -85,7 +85,7 @@ function App() {
             Add to the Backpack!
           </Button>
         </div>
-        <Card variant="outlined">{card}</Card>
+        <Card variant="outlined">
         <ul>
           {list.map((item) => (
             <li key={item.id}>
@@ -101,6 +101,8 @@ function App() {
             </li>
           ))}
         </ul>
+
+        </Card>
 
         <h2>Total weight: {finalWeightTotal / 1000} kg</h2>
       </header>
