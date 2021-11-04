@@ -88,7 +88,7 @@ function App() {
         <br />
         <br />
         <Card variant="outlined">
-        <ul>
+        <ul style={{ listStyleType: "none" }}>
           {list.map((item) => (
             <li key={item.id}>
               {item.name} {item.weight} g
