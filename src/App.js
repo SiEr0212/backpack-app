@@ -130,6 +130,7 @@ function App() {
         <Rating name="disabled" value={value} disabled />
         <Typography component="legend">No rating given</Typography>
         <Rating name="no-value" value={null} />
+        
       </header>
     </div>
   );
