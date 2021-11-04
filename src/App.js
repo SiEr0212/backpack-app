@@ -131,7 +131,7 @@ function App() {
         <Typography component="legend">No rating given</Typography>
         <Rating name="no-value" value={null} />
 
-        <h1>Copyright Simon Ertel</h1>
+        
       </header>
     </div>
   );
