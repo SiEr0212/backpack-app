@@ -8,10 +8,7 @@ import Card from "@mui/material/Card";
 import Rating from "@mui/material/Rating";
 import Typography from "@mui/material/Typography";
 //
-import Navbar from "./components/navbar";
-import Edit from "./components/edit";
-import Create from "./components/create";
-import RecordList from "./components/recordList";
+
 
 const initialList = [
   {
@@ -62,14 +59,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <Navbar />
-      <Route exact path="/">
-        <RecordList />
-      </Route>
-      <Route path="/edit/:id" component={Edit} />
-      <Route path="/create">
-        <Create />
-      </Route>
+      
       
         <h1>Backpack App</h1>
         <br />
