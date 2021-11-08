@@ -1,5 +1,6 @@
 import "./App.css";
 import React, { useState } from "react";
+import { Route } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
@@ -60,7 +61,14 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      
+      <Navbar />
+      <Route exact path="/">
+        <RecordList />
+      </Route>
+      <Route path="/edit/:id" component={Edit} />
+      <Route path="/create">
+        <Create />
+      </Route>
       
         <h1>Backpack App</h1>
         <br />
