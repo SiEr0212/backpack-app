@@ -9,7 +9,6 @@ import Rating from "@mui/material/Rating";
 import Typography from "@mui/material/Typography";
 //
 
-
 const initialList = [
   {
     id: "a",
@@ -59,8 +58,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      
-      
         <h1>Backpack App</h1>
         <br />
         <br />
@@ -135,8 +132,6 @@ function App() {
         <Rating name="disabled" value={value} disabled />
         <Typography component="legend">No rating given</Typography>
         <Rating name="no-value" value={null} />
-
-        
       </header>
     </div>
   );
