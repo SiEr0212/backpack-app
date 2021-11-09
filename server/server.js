@@ -11,7 +11,7 @@ app.use(
 app.use(bodyParser.json());
 
 const cors = require("cors");
-require("dotenv").config({ path: "./config.env" });
+require("dotenv").config({ path: "./config/config.env" });
 const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
