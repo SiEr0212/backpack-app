@@ -1,5 +1,7 @@
 const express = require("express");
 const app = express();
+const bodyParser = require("body-parser");
+
 // Bodyparser middleware
 app.use(
   bodyParser.urlencoded({
