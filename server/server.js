@@ -1,20 +1,26 @@
 const express = require("express");
 const app = express();
-const bodyParser = require("body-parser");
 const passport = require("passport");
+const port = 5000;
 const users = require("./routes/api/users");
 
-// Bodyparser middleware
-app.use(
-  bodyParser.urlencoded({
-    extended: false,
-  })
-);
-app.use(bodyParser.json());
+
 
 const cors = require("cors");
 require("dotenv").config({ path: "./config/config.env" });
-const port = process.env.PORT || 5000;
+
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  next();
+});
+
+// Passport middleware
+app.use(passport.initialize());
+// Passport config
+require("./config/passport")(passport);
+// Routes
+app.use("/api/users", users);
+
 app.use(cors());
 app.use(express.json());
 app.use(require("./routes/record"));
@@ -27,4 +33,6 @@ app.listen(port, () => {
     if (err) console.error(err);
   });
   console.log(`Server is running on port: ${port}`);
+ 
 });
+
