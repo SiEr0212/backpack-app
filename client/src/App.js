@@ -24,6 +24,13 @@ const initialList = [
 
 //Get the Data from Server part
 
+function GetData() {
+  const [data, setData] = useState({})
+  useEffect(()=> {
+    
+  })
+}
+
 function App() {
   const [list, setList] = useState(initialList);
   const [name, setName] = useState("");
