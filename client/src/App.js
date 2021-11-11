@@ -24,23 +24,6 @@ const initialList = [
 
 //Get the Data from Server part
 
-function GetData() {
-  const [data, setData] = useState({});
-  useEffect(() => {
-    fetch("/home")
-      .then((res) => res.json())
-      .then((data) => setData(data));
-  }, []);
-  console.log(data)
-
-  return (
-    <div>
-      <div>{data.name}</div>
-      <div>{data.age}</div>
-    </div>
-  );
-}
-
 function App() {
   const [list, setList] = useState(initialList);
   const [name, setName] = useState("");
@@ -72,6 +55,33 @@ function App() {
     const newList = list.filter((item) => item.id !== id);
 
     setList(newList);
+  }
+
+  //from data part
+  function GetData() {
+    const [data, setData] = useState({});
+    const formInfo = {
+      username: "Bill123",
+      password: "mypassword",
+    };
+    useEffect(() => {
+      fetch("/home", {
+        method: "POST",
+        headers: {
+          "Content-type": "application/json",
+        },
+        body: JSON.stringify(formInfo),
+      })
+        .then((res) => res.json())
+        .then((data) => setData(data));
+    }, []);
+
+    return (
+      <div>
+        <div>{data.name}</div>
+        <div>{data.age}</div>
+      </div>
+    );
   }
 
   return (
