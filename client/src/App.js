@@ -25,10 +25,12 @@ const initialList = [
 //Get the Data from Server part
 
 function GetData() {
-  const [data, setData] = useState({})
-  useEffect(()=> {
-    
-  })
+  const [data, setData] = useState({});
+  useEffect(() => {
+    fetch("/home")
+      .then((res) => res.json())
+      .then((data) => setData(data));
+  }, []);
 }
 
 function App() {
