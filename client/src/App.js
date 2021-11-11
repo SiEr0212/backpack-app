@@ -31,6 +31,14 @@ function GetData() {
       .then((res) => res.json())
       .then((data) => setData(data));
   }, []);
+  console.log(data)
+
+  return (
+    <div>
+      <div>{data.name}</div>
+      <div>{data.age}</div>
+    </div>
+  );
 }
 
 function App() {
