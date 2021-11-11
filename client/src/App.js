@@ -1,6 +1,6 @@
 import "./App.css";
 import { Route } from "react-router-dom";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
@@ -21,6 +21,8 @@ const initialList = [
     weight: 2000,
   },
 ];
+
+//Get the Data from Server part
 
 function App() {
   const [list, setList] = useState(initialList);
