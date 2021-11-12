@@ -7,7 +7,7 @@ const cors = require("cors");
 const users = require("./routes/api/users");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
-const User = require("./models/User")
+const User = require("./models/User");
 
 // DB Config
 const dbURI = require("./config/keys").mongoURI;
@@ -25,7 +25,6 @@ app.use(
 );
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
 
 //from dev
 app.get("/home", (req, res) => {
