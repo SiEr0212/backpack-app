@@ -16,6 +16,19 @@ const dbURI = require("./config/keys").mongoURI;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+
+//Cross Origin Handle Middleware
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Headers',
+     'Origin, X-Requested-With, Content-Type, Accept, Authorization'
+  );
+  if (req.method === 'OPTIONS') {
+     req.header('Access-Control-Allow-Methods', 'PUT, POST, PATCH, DELETE, GET');
+     return res.status(200).json({});
+  }
+  next();
+});
 /* app.use(Cors()); */
 app.use(
   cors({
@@ -37,6 +50,7 @@ app.post("/home", (req, res) => {
   console.log(req.body);
 });
 
+
 // Connect to MongoDB
 mongoose
   .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
@@ -49,8 +63,7 @@ app.use(passport.initialize());
 // Passport config
 require("./config/passport")(passport);
 
-// Routes
-app.use("/api/users", users);
+
 
 const port = process.env.PORT || 5000;
 
