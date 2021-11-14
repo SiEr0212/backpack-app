@@ -9,3 +9,5 @@ app.listen(PORT, () => console.log(`Server listening on port: ${PORT}`));
 
 //connect to mongoDB
 
+mongoose.connect()
+
