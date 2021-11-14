@@ -2,6 +2,8 @@ const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 
+dotenv.config()//reads the dotenv file
+
 //set up server
 
 const app = express();
