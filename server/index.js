@@ -12,4 +12,4 @@ app.listen(PORT, () => console.log(`Server listening on port: ${PORT}`));
 
 //connect to mongoDB
 //installesd "npm i dotenv" to acces env
-mongoose.connect();
+mongoose.connect(process.env.MDB_CONNECT);
