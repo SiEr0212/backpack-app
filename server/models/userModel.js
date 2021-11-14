@@ -4,4 +4,4 @@ const userSchema = new mongoose.Schema({
   passwordHash: { type: String, required: true },
 });
 
-const User = mongoose.model("user")
+const User = mongoose.model("user", userSchema);
