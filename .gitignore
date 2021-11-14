@@ -2,5 +2,6 @@ node_modules
 config.env
 .env
 keys.js
+/node_modules
 
 
