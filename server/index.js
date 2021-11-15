@@ -24,6 +24,7 @@ mongoose.connect(
   }
 );
 
+
 //set uo routes
 
 app.use("/auth", require("./routers/userRouter"));
