@@ -4,7 +4,7 @@ router.post("/", (req, res) => {
   try {
     const { email, password, passwordVerify } = req.body;
   } catch (err) {
-    console.log(err);
+    console.error(err);
   }
 });
 
