@@ -14,6 +14,11 @@ router.post("/", (req, res) => {
       return res.status(400).json({
         errorMessage: "Please enter a password of at least 6 characters.",
       });
+
+    if (password !== passwordVerify)
+      return res.status(400).json({
+        errorMessage: "Please enter the same password twice.",
+      });
   } catch (err) {
     console.error(err);
     res.status(500).send();
