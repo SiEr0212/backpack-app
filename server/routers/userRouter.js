@@ -1,7 +1,13 @@
 const router = require("express").Router();
 
 router.post("/", (req, res) => {
-  const {email, password, passwordVerify} = req.body;
+  try{
+    const {email, password, passwordVerify} = req.body;
+  }
+  catch(err){
+console.log(err)
+  }
+  
   
 });
 
