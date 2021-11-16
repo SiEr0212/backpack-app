@@ -1,7 +1,7 @@
 const router = require("express").Router();
 
 router.post("/", (req, res) => {
-  console.log(req.body)
+  const {email, password, passwordVerify} = req.body
 });
 
 module.exports = router;
