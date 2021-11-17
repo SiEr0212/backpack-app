@@ -20,6 +20,9 @@ router.post("/", (req, res) => {
       return res.status(400).json({
         errorMessage: "Please enter the same password twice.",
       });
+
+const existingUser = User.findOne()
+
   } catch (err) {
     console.error(err);
     res.status(500).send();
