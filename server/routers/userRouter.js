@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const User = require("../models/userModel");
 
-router.post("/", (req, res) => {
+router.post("/",async (req, res) => {
   try {
     const { email, password, passwordVerify } = req.body;
 
@@ -23,9 +23,14 @@ router.post("/", (req, res) => {
 
    /*  checks if the email we just entered matches the email of an existing user
      and if thats the case it is saved in the variabel existingUser.
-     so if its null no preexisting user */
+     so if its null no preexisting user . This returns a promise(async, await)*/
 
-    const existingUser = User.findOne({ email });
+    const existingUser = await User.findOne({ email });
+    
+    if (existingUser)
+    return res.status(400).json({
+      errorMessage: "An account with this email already exists.",
+    });
 
 
   } catch (err) {
