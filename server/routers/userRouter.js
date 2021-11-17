@@ -21,9 +21,10 @@ router.post("/", (req, res) => {
         errorMessage: "Please enter the same password twice.",
       });
 
-const existingUser = User.findOne()
-
-  } catch (err) {
+      // checks if the email we just entered matches the email of an existing user
+      const existingUser = User.findOne({email}) 
+ 
+} catch (err) {
     console.error(err);
     res.status(500).send();
   }
