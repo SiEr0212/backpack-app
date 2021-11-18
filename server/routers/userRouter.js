@@ -33,10 +33,10 @@ router.post("/", async (req, res) => {
       return res.status(400).json({
         errorMessage: "An account with this email already exists.",
       });
-      
+
       //hash the password
 
-
+const salt = bcrypt.genSalt()
 
   } catch (err) {
     console.error(err);
