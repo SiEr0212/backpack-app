@@ -47,7 +47,12 @@ router.post("/", async (req, res) => {
 
     const savedUser = await newUser.save();
 
+
+    // log the user in
+
     
+
+
   } catch (err) {
     console.error(err);
     res.status(500).send();
