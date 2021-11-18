@@ -40,13 +40,12 @@ router.post("/", async (req, res) => {
 
     //save a new user account to the db
 
-    const newUser = new User ({
-      email, passwordHash
-    })
+    const newUser = new User({
+      email,
+      passwordHash,
+    });
 
-
-
-
+    
   } catch (err) {
     console.error(err);
     res.status(500).send();
