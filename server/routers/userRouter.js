@@ -45,8 +45,9 @@ router.post("/", async (req, res) => {
       passwordHash,
     });
 
-    const savedUser = await newUser.save()
+    const savedUser = await newUser.save();
 
+    
   } catch (err) {
     console.error(err);
     res.status(500).send();
