@@ -36,6 +36,7 @@ router.post("/", async (req, res) => {
     //hash the password
 
     const salt = await bcrypt.genSalt();
+    const passwordHash = await bcrypt.hash(password, salt);
 
 
 
