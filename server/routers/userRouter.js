@@ -48,19 +48,15 @@ router.post("/", async (req, res) => {
 
     const savedUser = await newUser.save();
 
-
     //sign the token
     //contains the payload
 
-    const token = jwt.sign({
-      user : savedUser._id
-    }, process.env.JWT_SECRET)
-
-    
-
-    
-
-
+    const token = jwt.sign(
+      {
+        user: savedUser._id,
+      },
+      process.env.JWT_SECRET
+    );
   } catch (err) {
     console.error(err);
     res.status(500).send();
