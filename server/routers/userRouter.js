@@ -52,7 +52,11 @@ router.post("/", async (req, res) => {
     // log the user in
     //contains the payload
 
-    const token = jwt.sign()
+    const token = jwt.sign({
+      user : savedUser._id
+    }, process.env.JWT_SECRET)
+
+    console.log(token)
 
     
 
