@@ -56,7 +56,7 @@ router.post("/", async (req, res) => {
       user : savedUser._id
     }, process.env.JWT_SECRET)
 
-    console.log(token)
+    
 
     
 
