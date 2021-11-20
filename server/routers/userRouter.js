@@ -50,6 +50,9 @@ router.post("/", async (req, res) => {
 
 
     // log the user in
+    //contains the payload
+
+    const token = jwt.sign()
 
     
 
