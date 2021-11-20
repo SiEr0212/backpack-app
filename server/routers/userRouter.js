@@ -57,6 +57,10 @@ router.post("/", async (req, res) => {
       },
       process.env.JWT_SECRET
     );
+
+
+    //send de token
+
   } catch (err) {
     console.error(err);
     res.status(500).send();
