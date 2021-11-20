@@ -58,13 +58,13 @@ router.post("/", async (req, res) => {
       process.env.JWT_SECRET
     );
 
-
     //send de token in a HTTP-only cookie
 
     res.cookie("token", token, {
-      httpOnly: true
-    })
+      httpOnly: true,
+    });
 
+    
   } catch (err) {
     console.error(err);
     res.status(500).send();
