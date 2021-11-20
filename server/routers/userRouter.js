@@ -61,7 +61,7 @@ router.post("/", async (req, res) => {
 
     //send de token in a HTTP-only cookie
 
-res.cookie("token")
+    res.cookie("token", token)
 
   } catch (err) {
     console.error(err);
