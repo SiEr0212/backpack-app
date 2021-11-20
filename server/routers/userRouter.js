@@ -49,7 +49,7 @@ router.post("/", async (req, res) => {
     const savedUser = await newUser.save();
 
 
-    // log the user in
+    //sign the token
     //contains the payload
 
     const token = jwt.sign({
