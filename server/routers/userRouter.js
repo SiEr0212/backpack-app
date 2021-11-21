@@ -89,7 +89,7 @@ router.post("/login", async (req, res) => {
     if (!existingUser)
       return res
         .status(400)
-        .json({ errorMessage: "Please enter all required fields." });
+        .json({ errorMessage: "Wrong email or password" });
   } catch (err) {
     console.error(err);
     res.status(500).send();
