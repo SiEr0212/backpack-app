@@ -95,6 +95,21 @@ router.post("/login", async (req, res) => {
     );
     if (!passwordCorrect)
       return res.status(400).json({ errorMessage: "Wrong email or password." });
+
+    //sign the token
+
+    const token = jwt.sign(
+      {
+        user: savedUser._id,
+      },
+      process.env.JWT_SECRET
+    );
+    //send de token in a HTTP-only cookie
+    res
+      .cookie("token", token, {
+        httpOnly: true,
+      })
+      .send();
   } catch (err) {
     console.error(err);
     res.status(500).send();
