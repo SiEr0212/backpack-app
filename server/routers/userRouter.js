@@ -114,11 +114,14 @@ router.post("/login", async (req, res) => {
     //to logout a user I just clear the cookies
     //value of the cookie is an empty string (res.cookie("token", "")) so the token is gone and no longer valid
     router.get("/logout", (req, res) => {
-      res.cookie("token", "", {
-        httpOnly: true,
-        expires: new Date(0), //places it in the past so it expires directly => browser will completly remove the cookie
-      })
-      .send();
+      res
+        .cookie("token", "", {
+          httpOnly: true,
+          expires: new Date(0),//places it in the past so it expires directly => browser will completly remove the cooki
+          secure: true,
+          sameSite: "none",
+        })
+        .send();
     });
   } catch (err) {
     console.error(err);
