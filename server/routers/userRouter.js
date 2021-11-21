@@ -62,11 +62,11 @@ router.post("/", async (req, res) => {
 
     //send de token in a HTTP-only cookie
 
-    res.cookie("token", token, {
-      httpOnly: true,
-    }).send();
-
-
+    res
+      .cookie("token", token, {
+        httpOnly: true,
+      })
+      .send();
   } catch (err) {
     console.error(err);
     res.status(500).send();
@@ -75,6 +75,6 @@ router.post("/", async (req, res) => {
 
 //login
 
-router.post('/login')
+router.post("/login");
 
 module.exports = router;
