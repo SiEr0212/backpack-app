@@ -110,6 +110,9 @@ router.post("/login", async (req, res) => {
         httpOnly: true,
       })
       .send();
+      
+      //to logout a user I just clear the cookies
+
   } catch (err) {
     console.error(err);
     res.status(500).send();
