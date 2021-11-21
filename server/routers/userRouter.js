@@ -112,6 +112,10 @@ router.post("/login", async (req, res) => {
       .send();
       
       //to logout a user I just clear the cookies
+      //value of the cookie is an empty string
+      router.get("/logout", (req,res)=> {
+        res.cookie("token", "")
+      })
 
   } catch (err) {
     console.error(err);
