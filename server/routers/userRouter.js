@@ -88,8 +88,8 @@ router.post("/login", async (req, res) => {
     const existingUser = await User.findOne({ email });
     if (!existingUser)
       return res.status(400).json({ errorMessage: "Wrong email or password." });
-
-      const passwordCorrect = await bcrypt.compare()
+//compares the entered password with the password in the db
+      const passwordCorrect = await bcrypt.compare(password, existingUser.passwordHash)
   } catch (err) {
     console.error(err);
     res.status(500).send();
