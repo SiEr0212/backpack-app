@@ -84,6 +84,12 @@ router.post("/login", async (req, res) => {
       return res
         .status(400)
         .json({ errorMessage: "Please enter all required fields." });
+
+    const existingUser = await User.findOne({ email });
+    if (!existingUser)
+      return res
+        .status(400)
+        .json({ errorMessage: "Please enter all required fields." });
   } catch (err) {
     console.error(err);
     res.status(500).send();
