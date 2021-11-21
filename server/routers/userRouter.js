@@ -77,6 +77,7 @@ router.post("/", async (req, res) => {
 
 router.post("/login", async (req, res) => {
   try {
+    const { email, password } = req.body;
   } catch (err) {
     console.error(err);
     res.status(500).send();
