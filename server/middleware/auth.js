@@ -1,6 +1,6 @@
 function auth(req, res, next) {
   try {
-console.log(req.cookies);
+    console.log(req.cookies);
   } catch (err) {
     console.log(err);
     res.status(401).json({
@@ -8,3 +8,5 @@ console.log(req.cookies);
     });
   }
 }
+
+module.exports = auth;
