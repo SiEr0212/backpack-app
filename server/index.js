@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server listening on port: ${PORT}`));
 
 app.use(express.json());
-app.use(cookieParser);
+app.use(cookieParser());
 
 //connect to mongoDB
 //installesd "npm i dotenv" to acces env
