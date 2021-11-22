@@ -8,6 +8,10 @@ router.post("/", async (req, res) => {
     const newCustomer = new Customer({
       name,
     });
+
+    const savedCustomer = await newCustomer.save();
+
+    res.json(savedCustomer);
   } catch (err) {
     console.error(err);
     res.status(500).send();
