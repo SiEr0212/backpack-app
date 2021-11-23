@@ -19,4 +19,13 @@ router.post("/",auth, async (req, res) => {
     res.status(500).send();
   }
 });
+
+router.get("/", auth, async (req, res) => {
+  try {
+    const customers = await Customer.find();
+  } catch (err) {
+    console.error(err);
+    res.status(500).send();
+  }
+})
 module.exports = router;
