@@ -3,7 +3,7 @@ const Customer = require("../models/customerModel");
 const auth = require("../middleware/auth");
 
 //auth is the middleware I created to check authorization
-router.post("/",auth, async (req, res) => {
+router.post("/", auth, async (req, res) => {
   try {
     const { name } = req.body;
 
@@ -23,9 +23,10 @@ router.post("/",auth, async (req, res) => {
 router.get("/", auth, async (req, res) => {
   try {
     const customers = await Customer.find();
+    res.json(customers);
   } catch (err) {
     console.error(err);
     res.status(500).send();
   }
-})
+});
 module.exports = router;
