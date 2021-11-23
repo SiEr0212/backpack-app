@@ -2,6 +2,7 @@ const router = require("express").Router();
 const Customer = require("../models/customerModel");
 const auth = require("../middleware/auth");
 
+//auth is the middleware I created to check authorization
 router.post("/",auth, async (req, res) => {
   try {
     const { name } = req.body;
