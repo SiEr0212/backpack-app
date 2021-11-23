@@ -2,14 +2,13 @@ const jwt = require("jsonwebtoken");
 
 function auth(req, res, next) {
   try {
-   const token = req.cookies.token; //installed library with npm i cookie-parser to store the cookie in an json object
+    const token = req.cookies.token; //installed library with npm i cookie-parser to store the cookie in an json object
 
-   if (!token) return res.status(401).json({errorMesage: "Unauthorized"});
+    if (!token) return res.status(401).json({ errorMesage: "Unauthorized" });
 
-   const verified = jwt.verify(token, process.env.JWT_SECRET);
-   
-   
+    const verified = jwt.verify(token, process.env.JWT_SECRET);
 
+    req.user = verified.user;
   } catch (err) {
     console.log(err);
     res.status(401).json({
