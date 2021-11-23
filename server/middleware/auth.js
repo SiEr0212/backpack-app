@@ -7,6 +7,8 @@ function auth(req, res, next) {
    if (!token) return res.status(401).json({errorMesage: "Unauthorized"});
 
    const verified = jwt.verify(token, process.env.JWT_SECRET);
+   
+   
 
   } catch (err) {
     console.log(err);
