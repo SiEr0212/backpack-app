@@ -8,6 +8,15 @@ export default function Router() {
       <Route path="/">
         <div>Home</div>
       </Route>
+      <Route path="/register">
+        <div>Register</div>
+      </Route>
+      <Route path="/login">
+        <div>Login</div>
+      </Route>
+      <Route path="/customer">
+        <div>Customer</div>
+      </Route>
     </Switch>
   </BrowserRouter>;
 }
