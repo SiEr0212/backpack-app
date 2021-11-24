@@ -59,8 +59,6 @@ function Backpack() {
 
   return (
     <div>
-   
-   
         <h1>Backpack App</h1>
         <br />
         <br />
