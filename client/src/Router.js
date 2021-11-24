@@ -5,7 +5,7 @@ export default function Router() {
   return (
   <BrowserRouter>
     <Routes>
-      <Route path="/">
+      <Route exact path="/">
         <div>Home</div>
       </Route>
       <Route path="/register">

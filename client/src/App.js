@@ -57,34 +57,6 @@ function App() {
     setList(newList);
   }
 
-  //from data part
-  function GetData() {
-    const [data, setData] = useState({});
-    const formInfo = {
-      username: "Bill123",
-      password: "mypassword",
-    };
-    useEffect(() => {
-      fetch("/home", {
-        method: "POST",
-        headers: {
-          "Content-type": "application/json",
-        },
-        body: JSON.stringify(formInfo),
-      })
-        .then((res) => res.json())
-        .then((data) => setData(data));
-    }, []);
-
-    return (
-      <div>
-       <Router />
-        <div>{data.name}</div>
-        <div>{data.age}</div>
-      </div>
-    );
-  }
-
   return (
     <div className="App">
    
@@ -149,20 +121,7 @@ function App() {
         </Card>
 
         <h2>Total weight: {finalWeightTotal / 1000} kg</h2>
-        <Typography component="legend">Controlled</Typography>
-        <Rating
-          name="simple-controlled"
-          value={value}
-          onChange={(event, newValue) => {
-            setValue(newValue);
-          }}
-        />
-        <Typography component="legend">Read only</Typography>
-        <Rating name="read-only" value={value} readOnly />
-        <Typography component="legend">Disabled</Typography>
-        <Rating name="disabled" value={value} disabled />
-        <Typography component="legend">No rating given</Typography>
-        <Rating name="no-value" value={null} />
+        
       </header>
     </div>
   );
