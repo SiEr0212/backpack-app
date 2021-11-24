@@ -1,9 +1,12 @@
 import React from "react";
 import {  Routes, Route} from "react-router-dom";
+import Navbar from "./components/layout/Navbar";
 
  function Router() {
   return (
- 
+      <>
+<Navbar />
+
     <Routes>
       <Route exact path="/"/>
         
@@ -16,6 +19,7 @@ import {  Routes, Route} from "react-router-dom";
       <Route path="/backpack"/>
         
     </Routes>
+    </>
   
   );
   
