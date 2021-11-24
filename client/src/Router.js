@@ -17,6 +17,9 @@ export default function Router() {
       <Route path="/customer">
         <div>Customer</div>
       </Route>
+      <Route path="/backpack">
+        <div>Backpack</div>
+      </Route>
     </Routes>
   </BrowserRouter>
   );
