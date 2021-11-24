@@ -1,27 +1,23 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import {  Routes, Route} from "react-router-dom";
 
-export default function Router() {
+ function Router() {
   return (
-  <BrowserRouter>
+ 
     <Routes>
-      <Route exact path="/">
-        <div>Home</div>
-      </Route>
-      <Route path="/register">
-        <div>Register</div>
-      </Route>
-      <Route path="/login">
-        <div>Login</div>
-      </Route>
-      <Route path="/customer">
-        <div>Customer</div>
-      </Route>
-      <Route path="/backpack">
-        <div>Backpack</div>
-      </Route>
+      <Route exact path="/"/>
+        
+      <Route path="/register"/>
+        
+      <Route path="/login"/>
+        
+      <Route path="/customer"/>
+        
+      <Route path="/backpack"/>
+        
     </Routes>
-  </BrowserRouter>
+  
   );
   
 }
+export default Router;
