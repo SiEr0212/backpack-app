@@ -1,4 +1,4 @@
-import { Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes,  } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
 import Button from "@mui/material/Button";
@@ -6,6 +6,7 @@ import TextField from "@mui/material/TextField";
 import Card from "@mui/material/Card";
 import Rating from "@mui/material/Rating";
 import Typography from "@mui/material/Typography";
+import Router from "./Router";
 //
 
 const initialList = [
@@ -77,6 +78,7 @@ function App() {
 
     return (
       <div>
+       <Router />
         <div>{data.name}</div>
         <div>{data.age}</div>
       </div>
@@ -85,6 +87,7 @@ function App() {
 
   return (
     <div className="App">
+   
       <header className="App-header">
         <h1>Backpack App</h1>
         <br />
