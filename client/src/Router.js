@@ -1,6 +1,7 @@
 import React from "react";
 import {  Routes, Route} from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
+import Backpack  from "./components/Backpack";
 
  function Router() {
   return (
