@@ -10,18 +10,16 @@ function Router() {
       <Navbar />
 
       <Routes>
-       
         <Route exact path="/" />
-      
+
         <Route path="/register">
-        <Register/>
+          <Register />
         </Route>
         <Route path="/login" />
-        
+
         <Route path="/customer" />
-        
+
         <Route path="/backpack" />
-       
       </Routes>
     </>
   );
