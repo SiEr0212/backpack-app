@@ -8,6 +8,7 @@ export default function Register() {
           <input type="email" placeholder="Email" />
           <input type="password" placeholder="Password" />
           <input type="password" placeholder="Verify your password" />
+          <button type="submit">Register</button>
           </form>
         </div>
     )
