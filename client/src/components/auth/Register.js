@@ -4,6 +4,7 @@ export default function Register() {
     return (
         <div>
           <h1>Register a new account</h1>  
+          <form action=""></form>
         </div>
     )
 }
