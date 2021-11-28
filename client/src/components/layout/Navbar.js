@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import Backpack from '../Backpack';
+
 
 export default function Navbar() {
     return (
