@@ -10,15 +10,15 @@ function Router() {
 
       <Routes>
         <Route exact path="/" />
-        <div>Home</div>
+        <>Home</>
         <Route path="/register" />
-        <div>Register</div>
+        <>Register</>
         <Route path="/login" />
-        <div>Login</div>
+        <>Login</>
         <Route path="/customer" />
-        <div>Customer</div>
+        <>Customer</>
         <Route path="/backpack" />
-        <div>Backpack</div>
+        <>Backpack</>
       </Routes>
     </>
   );
