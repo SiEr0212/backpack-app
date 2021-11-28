@@ -6,6 +6,8 @@ export default function Register() {
           <h1>Register a new account</h1>  
           <form >
           <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <input type="password" placeholder="Verify your password" />
           </form>
         </div>
     )
