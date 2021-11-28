@@ -1,6 +1,10 @@
-import React from "react";
+import React, {useState} from "react";
 
 export default function Register() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [passwordVerify, setPasswordVerify] = useState("");
+
   return (
     <div>
       <h1>Register a new account</h1>
