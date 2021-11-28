@@ -10,7 +10,7 @@ function Router() {
       <Navbar />
 
       <Routes>
-        <> 
+       
         <Route exact path="/" />
       
         <Route path="/register">
@@ -21,7 +21,7 @@ function Router() {
         <Route path="/customer" />
         
         <Route path="/backpack" />
-        </>
+       
       </Routes>
     </>
   );
