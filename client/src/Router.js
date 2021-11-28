@@ -10,15 +10,15 @@ function Router() {
 
       <Routes>
         <Route exact path="/" />
-        <>Home</>
+      
         <Route path="/register" />
-        <>Register</>
+        
         <Route path="/login" />
-        <>Login</>
+        
         <Route path="/customer" />
-        <>Customer</>
+        
         <Route path="/backpack" />
-        <>Backpack</>
+        
       </Routes>
     </>
   );
