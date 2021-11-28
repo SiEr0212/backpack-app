@@ -4,7 +4,9 @@ export default function Register() {
     return (
         <div>
           <h1>Register a new account</h1>  
-          <form action=""></form>
+          <form >
+          <input type="email" placeholder="Email" />
+          </form>
         </div>
     )
 }
