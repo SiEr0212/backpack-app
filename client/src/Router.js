@@ -1,28 +1,26 @@
 import React from "react";
-import {  Routes, Route} from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
-import Backpack  from "./components/Backpack";
+import Backpack from "./components/Backpack";
 
- function Router() {
+function Router() {
   return (
-      <>
-<Navbar />
+    <>
+      <Navbar />
 
-    <Routes>
-      <Route exact path="/"/>
-        
-      <Route path="/register"/>
-        
-      <Route path="/login"/>
-        
-      <Route path="/customer"/>
-        
-      <Route path="/backpack"/>
-        
-    </Routes>
+      <Routes>
+        <Route exact path="/" />
+        <div>Home</div>
+        <Route path="/register" />
+        <div>Register</div>
+        <Route path="/login" />
+        <div>Login</div>
+        <Route path="/customer" />
+        <div>Customer</div>
+        <Route path="/backpack" />
+        <div>Backpack</div>
+      </Routes>
     </>
-  
   );
-  
 }
 export default Router;
