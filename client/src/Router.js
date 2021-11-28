@@ -13,15 +13,13 @@ function Router() {
         
         <Route exact path="/" />
 
-        <Route path="/register">
-          <Register />
-        </Route>
+        <Route path="/register" element={ <Register />} />
         
         <Route path="/login" />
 
         <Route path="/customer" />
 
-        <Route path="/backpack" />
+        <Route path="/backpack" element = {<Backpack />} />
       
       </Routes>
     </>
