@@ -9,6 +9,11 @@ export default function Register() {
     e.preventDefault(); // keeps the Browser from refreshing
 
     try {
+      const registerData = {
+        email,
+        password,
+        passwordVerify,
+      }
     } catch (err) {
       console.error(err);
     }
