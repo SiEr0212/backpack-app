@@ -9,7 +9,8 @@ export default function Register() {
     <div>
       <h1>Register a new account</h1>
       <form>
-        <input type="email" placeholder="Email" onChange={(e)=> setEmail(e.target.value)}/>
+        <input type="email" placeholder="Email" onChange={(e)=> setEmail(e.target.value)}
+        value={email}/>
         <input type="password" placeholder="Password" />
         <input type="password" placeholder="Verify your password" />
         <button type="submit">Register</button>
