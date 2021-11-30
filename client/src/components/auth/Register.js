@@ -8,7 +8,7 @@ export default function Register() {
   return (
     <div>
       <h1>Register a new account</h1>
-      <form>
+      <form onSubmit={}>
         <input
           type="email"
           placeholder="Email"
