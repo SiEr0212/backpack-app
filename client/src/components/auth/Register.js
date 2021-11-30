@@ -15,7 +15,12 @@ export default function Register() {
           onChange={(e) => setEmail(e.target.value)}
           value={email}
         />
-        <input type="password" placeholder="Password" />
+        <input
+          type="password"
+          placeholder="Password"
+          onChange={(e) => setPassword(e.target.value)}
+          value={password}
+        />
         <input type="password" placeholder="Verify your password" />
         <button type="submit">Register</button>
       </form>
