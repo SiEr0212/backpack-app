@@ -7,6 +7,12 @@ export default function Register() {
 
   async function register(e) {
     e.preventDefault(); // keeps the Browser from refreshing
+
+    try {
+
+    } catch(err) {
+
+    }
   }
 
   return (
