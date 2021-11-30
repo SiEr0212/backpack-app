@@ -13,7 +13,7 @@ export default function Register() {
         email,
         password,
         passwordVerify,
-      }
+      };
     } catch (err) {
       console.error(err);
     }
