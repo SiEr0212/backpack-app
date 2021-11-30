@@ -9,9 +9,8 @@ export default function Register() {
     e.preventDefault(); // keeps the Browser from refreshing
 
     try {
-
-    } catch(err) {
-console.error(err)
+    } catch (err) {
+      console.error(err);
     }
   }
 
