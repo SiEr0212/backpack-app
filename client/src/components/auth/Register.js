@@ -5,10 +5,12 @@ export default function Register() {
   const [password, setPassword] = useState("");
   const [passwordVerify, setPasswordVerify] = useState("");
 
+  async function register(e)
+
   return (
     <div>
       <h1>Register a new account</h1>
-      <form onSubmit={}>
+      <form onSubmit={register}>
         <input
           type="email"
           placeholder="Email"
