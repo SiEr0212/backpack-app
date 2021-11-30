@@ -11,7 +11,7 @@ export default function Register() {
     try {
 
     } catch(err) {
-
+console.error(err)
     }
   }
 
