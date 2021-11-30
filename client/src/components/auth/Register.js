@@ -6,7 +6,7 @@ export default function Register() {
   const [passwordVerify, setPasswordVerify] = useState("");
 
   async function register(e) {
-    
+    e.preventDefault(); // keeps the Browser from refreshing
   }
 
   return (
