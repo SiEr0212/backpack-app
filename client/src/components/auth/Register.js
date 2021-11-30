@@ -5,7 +5,9 @@ export default function Register() {
   const [password, setPassword] = useState("");
   const [passwordVerify, setPasswordVerify] = useState("");
 
-  async function register(e)
+  async function register(e) {
+    
+  }
 
   return (
     <div>
