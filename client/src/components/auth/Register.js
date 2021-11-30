@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 export default function Register() {
   const [email, setEmail] = useState("");
@@ -9,8 +9,12 @@ export default function Register() {
     <div>
       <h1>Register a new account</h1>
       <form>
-        <input type="email" placeholder="Email" onChange={(e)=> setEmail(e.target.value)}
-        value={email}/>
+        <input
+          type="email"
+          placeholder="Email"
+          onChange={(e) => setEmail(e.target.value)}
+          value={email}
+        />
         <input type="password" placeholder="Password" />
         <input type="password" placeholder="Verify your password" />
         <button type="submit">Register</button>
