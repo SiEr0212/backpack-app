@@ -16,7 +16,7 @@ export default function Register() {
         passwordVerify,
       };
 
-      await axios.post();
+      await axios.post("http://localhost:3000/auth/");
 
     } catch (err) {
       console.error(err);
