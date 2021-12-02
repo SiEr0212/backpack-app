@@ -17,7 +17,6 @@ export default function Register() {
       };
 
       await axios.post("http://localhost:5000/auth/", registerData);
-
     } catch (err) {
       console.error(err);
     }
