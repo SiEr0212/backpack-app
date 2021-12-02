@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useState } from "react";
 
 export default function Register() {
@@ -14,6 +15,8 @@ export default function Register() {
         password,
         passwordVerify,
       };
+
+      await axios;
     } catch (err) {
       console.error(err);
     }
