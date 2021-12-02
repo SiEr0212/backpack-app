@@ -16,7 +16,8 @@ export default function Register() {
         passwordVerify,
       };
 
-      await axios;
+      await axios.post();
+
     } catch (err) {
       console.error(err);
     }
