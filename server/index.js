@@ -2,7 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const cookieParser = require("cookie-parser");
-
+const cors = require("cors");
 dotenv.config(); //reads the dotenv file
 
 //set up server
