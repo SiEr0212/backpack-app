@@ -14,6 +14,7 @@ app.listen(PORT, () => console.log(`Server listening on port: ${PORT}`));
 
 app.use(express.json());
 app.use(cookieParser());
+app.use(cors());
 
 //connect to mongoDB
 //installesd "npm i dotenv" to acces env
