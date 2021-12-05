@@ -110,42 +110,39 @@ router.post("/login", async (req, res) => {
         httpOnly: true,
       })
       .send();
-    } catch (err) {
-      console.error(err);
-      res.status(500).send();
-    }
-  });
+  } catch (err) {
+    console.error(err);
+    res.status(500).send();
+  }
+});
 
-    //to logout a user I just clear the cookies
-    //value of the cookie is an empty string (res.cookie("token", "")) so the token is gone and no longer valid
-    router.get("/logout", (req, res) => {
-      res
-        .cookie("token", "", {
-          httpOnly: true,
-          expires: new Date(0),//places it in the past so it expires directly => browser will completly remove the cooki
-          secure: true,
-          sameSite: "none",
-        })
-        .send();
-    });
+//to logout a user I just clear the cookies
+//value of the cookie is an empty string (res.cookie("token", "")) so the token is gone and no longer valid
+router.get("/logout", (req, res) => {
+  res
+    .cookie("token", "", {
+      httpOnly: true,
+      expires: new Date(0), //places it in the past so it expires directly => browser will completly remove the cooki
+      secure: true,
+      sameSite: "none",
+    })
+    .send();
+});
 
-router.get("/loggedIn", (req,res) => {
+router.get("/loggedIn", (req, res) => {
   try {
     const token = req.cookies.token; //installed library with npm i cookie-parser to store the cookie in an json object
 
     if (!token) return res.json(false);
 
-    const verified = jwt.verify(token, process.env.JWT_SECRET);
+   jwt.verify(token, process.env.JWT_SECRET);
 
-    req.user = verified.user;
-
-    next(); //exits the auth middleware and lets the rest execute 
+    
+res.send(true)
+  
   } catch (err) {
     res.json(false);
   }
-
-})
-    
-  
+});
 
 module.exports = router;
