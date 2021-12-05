@@ -129,7 +129,7 @@ router.post("/login", async (req, res) => {
         const token = req.cookies.token; //installed library with npm i cookie-parser to store the cookie in an json object
 
         if (!token)
-          return res.status(401).json(false);
+          return res.json(false);
 
         const verified = jwt.verify(token, process.env.JWT_SECRET);
 
