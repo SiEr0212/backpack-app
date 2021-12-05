@@ -124,6 +124,8 @@ router.post("/login", async (req, res) => {
         .send();
     });
 
+    router.get("/loggedIn")
+
     function auth(req, res, next) {
       try {
         const token = req.cookies.token; //installed library with npm i cookie-parser to store the cookie in an json object
