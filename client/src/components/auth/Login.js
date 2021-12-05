@@ -24,7 +24,7 @@ export default function Login() {
 
   return (
     <div>
-      <h1>Register a new account</h1>
+      <h1>Login to your account</h1>
       <form onSubmit={register}>
         <input
           type="email"
