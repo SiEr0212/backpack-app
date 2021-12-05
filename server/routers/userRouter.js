@@ -117,35 +117,35 @@ router.post("/login", async (req, res) => {
       res
         .cookie("token", "", {
           httpOnly: true,
-          expires: new Date(0),//places it in the past so it expires directly => browser will completly remove the cooki
+          expires: new Date(0), //places it in the past so it expires directly => browser will completly remove the cooki
           secure: true,
           sameSite: "none",
         })
         .send();
     });
 
-    router.get("/loggedIn")
-
-    function auth(req, res, next) {
+    router.get("/loggedIn", (req, res) => {
       try {
         const token = req.cookies.token; //installed library with npm i cookie-parser to store the cookie in an json object
-    
-        if (!token) return res.status(401).json({ errorMesage: "Unauthorized" });
-    
+
+        if (!token)
+          return res.status(401).json(false);
+
         const verified = jwt.verify(token, process.env.JWT_SECRET);
-    
+
         req.user = verified.user;
-    
-        next(); //exits the auth middleware and lets the rest execute 
+
+        next(); //exits the auth middleware and lets the rest execute
       } catch (err) {
         console.log(err);
         res.status(401).json({
           errorMesage: "Unauthorized",
         });
       }
-    }
 
+    });
 
+    
   } catch (err) {
     console.error(err);
     res.status(500).send();
