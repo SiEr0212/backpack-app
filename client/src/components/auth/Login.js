@@ -38,12 +38,6 @@ export default function Login() {
           onChange={(e) => setPassword(e.target.value)}
           value={password}
         />
-        <input
-          type="password"
-          placeholder="Verify your password"
-          onChange={(e) => setPasswordVerify(e.target.value)}
-          value={passwordVerify}
-        />
         <button type="submit">Register</button>
       </form>
     </div>
