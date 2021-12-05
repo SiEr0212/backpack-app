@@ -4,7 +4,7 @@ import React, { useState } from "react";
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  
+
   async function register(e) {
     e.preventDefault(); // keeps the Browser from refreshing
 
@@ -12,11 +12,9 @@ export default function Login() {
       const registerData = {
         email,
         password,
-        
       };
 
-      await axios.post("http://localhost:5000/auth/", 
-        registerData,{
+      await axios.post("http://localhost:5000/auth/", registerData, {
         withCredentials: true,
       });
     } catch (err) {
