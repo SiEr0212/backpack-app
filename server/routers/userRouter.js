@@ -141,10 +141,7 @@ router.get("/loggedIn", (req,res) => {
 
     next(); //exits the auth middleware and lets the rest execute 
   } catch (err) {
-    console.log(err);
-    res.status(401).json({
-      errorMesage: "Unauthorized",
-    });
+    res.json(false);
   }
 
 })
