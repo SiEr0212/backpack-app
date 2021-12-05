@@ -9,7 +9,7 @@ export default function Login() {
     e.preventDefault(); // keeps the Browser from refreshing
 
     try {
-      const registerData = {
+      const loginData = {
         email,
         password,
       };
