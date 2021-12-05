@@ -5,7 +5,7 @@ export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  async function register(e) {
+  async function login(e) {
     e.preventDefault(); // keeps the Browser from refreshing
 
     try {
