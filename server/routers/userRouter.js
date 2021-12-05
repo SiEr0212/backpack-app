@@ -110,6 +110,11 @@ router.post("/login", async (req, res) => {
         httpOnly: true,
       })
       .send();
+    } catch (err) {
+      console.error(err);
+      res.status(500).send();
+    }
+  });
 
     //to logout a user I just clear the cookies
     //value of the cookie is an empty string (res.cookie("token", "")) so the token is gone and no longer valid
@@ -123,10 +128,6 @@ router.post("/login", async (req, res) => {
         })
         .send();
     });
-  } catch (err) {
-    console.error(err);
-    res.status(500).send();
-  }
-});
+  
 
 module.exports = router;
