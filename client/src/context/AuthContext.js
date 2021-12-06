@@ -1,5 +1,7 @@
-import React, {useEffect, useState} from "react";
+import React, {createContext, useEffect, useState} from "react";
 import axios from "axios";
+
+const AuthContext = createContext;
 
 export default function AuthContextProvider() {
   const [loggedIn, setLoggedIn] = useState(undefined);
