@@ -1,9 +1,9 @@
 import React, { createContext, useEffect, useState } from "react";
 import axios from "axios";
 
-const AuthContext = createContext(props);
+const AuthContext = createContext();
 
-function AuthContextProvider() {
+function AuthContextProvider(props) {
   const [loggedIn, setLoggedIn] = useState(undefined);
 
   async function getLoggedIn() {
