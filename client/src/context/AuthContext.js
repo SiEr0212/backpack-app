@@ -14,6 +14,6 @@ export default function AuthContextProvider() {
   useEffect(() => {
     getLoggedIn();
   }, []);
-  
-  return <></>;
+
+  return <AuthContext.Provider></AuthContext.Provider>;
 }
