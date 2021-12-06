@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import axios from "axios";
 
 export default function AuthContextProvider() {
@@ -8,5 +8,9 @@ export default function AuthContextProvider() {
     const loggedInRes = await axios.get("http://localhost:5000/auth/");
     setLoggedIn(loggedInRes.data)//sets it to the boolean true or false
   }
+
+  useEffect(() => {
+      getLoggedIn();
+  }, [])
   return <></>;
 }
