@@ -1,9 +1,9 @@
 import React, { createContext, useEffect, useState } from "react";
 import axios from "axios";
 
-const AuthContext = createContext();
+const AuthContext = createContext(props);
 
-export default function AuthContextProvider() {
+function AuthContextProvider() {
   const [loggedIn, setLoggedIn] = useState(undefined);
 
   async function getLoggedIn() {
@@ -19,3 +19,6 @@ export default function AuthContextProvider() {
   
   </AuthContext.Provider>;
 }
+
+export default AuthContext;
+export {AuthContextProvider}
