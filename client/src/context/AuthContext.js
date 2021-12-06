@@ -15,7 +15,7 @@ export default function AuthContextProvider() {
     getLoggedIn();
   }, []);
 
-  return <AuthContext.Provider value={loggedIn}>
+  return <AuthContext.Provider value={{loggedIn, getLoggedIn}}>
   
   </AuthContext.Provider>;
 }
