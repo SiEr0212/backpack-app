@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
 
 export default function AuthContextProvider() {
-    return (
-        <div>
-            
-        </div>
-    )
+
+  const [loggedIn, setLoggedIn] = useState(undefined);
+
+  return <></>;
 }
