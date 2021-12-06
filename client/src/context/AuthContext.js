@@ -15,10 +15,12 @@ function AuthContextProvider() {
     getLoggedIn();
   }, []);
 
-  return <AuthContext.Provider value={{loggedIn, getLoggedIn}}>
-  
-  </AuthContext.Provider>;
+  return (
+    <AuthContext.Provider
+      value={{ loggedIn, getLoggedIn }}
+    ></AuthContext.Provider>
+  );
 }
 
 export default AuthContext;
-export {AuthContextProvider}
+export { AuthContextProvider };
