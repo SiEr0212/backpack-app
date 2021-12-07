@@ -4,7 +4,8 @@ import {Link} from "react-router-dom";
 
 export default function Navbar() {
 
-    const loggedIn = useContext()
+    const loggedIn = useContext();
+    
     return (
         <div>
            <Link to="/">Home</Link>
