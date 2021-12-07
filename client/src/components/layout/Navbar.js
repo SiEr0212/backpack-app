@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import AuthContext from "../../context/AuthContext";
 
 export default function Navbar() {
+    
   const loggedIn = useContext(AuthContext);
 
   return (
