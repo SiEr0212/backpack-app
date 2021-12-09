@@ -22,10 +22,13 @@ function Router() {
             <Route path="/login" element={<Login />} />
           </>
         )}
+        {loggedIn === true && (
+          <>
+            <Route path="/customer" />
 
-        <Route path="/customer" />
-
-        <Route path="/backpack" element={<Backpack />} />
+            <Route path="/backpack" element={<Backpack />} />
+          </>
+        )}
       </Routes>
     </>
   );
