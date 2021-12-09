@@ -17,7 +17,7 @@ const {loggedIn} = useContext(AuthContext)
       <Routes>
         
         <Route exact path="/" />
-
+{loggedIn === false}
         <Route path="/register" element={ <Register />} />
         
         <Route path="/login" element={<Login />}/>
