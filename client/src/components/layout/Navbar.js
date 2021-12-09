@@ -17,15 +17,12 @@ export default function Navbar() {
           <Link to="/login">Login</Link>
         </>
       )}
-{
-    loggedIn === false &&(
+      {loggedIn === false && (
         <>
-        <Link to="/customer">Customer</Link>
-        <Link to="/backpack">Backpack</Link>
+          <Link to="/customer">Customer</Link>
+          <Link to="/backpack">Backpack</Link>
         </>
-    )
-}
-      
+      )}
     </div>
   );
 }
