@@ -11,14 +11,14 @@ export default function Navbar() {
     <div>
       <Link to="/">Home</Link>
 
-      {!loggedIn && (
+      {!loggedIn === true && (
         <>
           <Link to="/register">Register</Link>
           <Link to="/login">Login</Link>
         </>
       )}
 {
-    loggedIn && (
+    loggedIn === false &&(
         <>
         <Link to="/customer">Customer</Link>
         <Link to="/backpack">Backpack</Link>
