@@ -15,12 +15,13 @@ function Router() {
 
       <Routes>
         <Route exact path="/" />
-        {loggedIn === false && <> 
-        
-        </>}
-        <Route path="/register" element={<Register />} />
+        {loggedIn === false && (
+          <>
+            <Route path="/register" element={<Register />} />
 
-        <Route path="/login" element={<Login />} />
+            <Route path="/login" element={<Login />} />
+          </>
+        )}
 
         <Route path="/customer" />
 
