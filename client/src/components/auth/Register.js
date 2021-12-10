@@ -1,10 +1,13 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import AuthContext from "../../context/AuthContext";
 
 export default function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [passwordVerify, setPasswordVerify] = useState("");
+
+  const { getLoggedIn } = useContext(AuthContext);
 
   async function register(e) {
     e.preventDefault(); // keeps the Browser from refreshing
