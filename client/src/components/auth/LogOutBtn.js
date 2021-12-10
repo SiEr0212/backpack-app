@@ -8,7 +8,7 @@ export default function LogOutBtn() {
 
   async function logout() {
     await axios.get("http://localhost:5000/auth/logout"); //returns an empty cookie
-    getLoggedIn();
+    await getLoggedIn();
   }
 
   return <button onClick={logout}>Logout</button>;
