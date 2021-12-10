@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useContext, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import AuthContext from "../../context/AuthContext";
 
 export default function Login() {
@@ -7,6 +8,7 @@ export default function Login() {
   const [password, setPassword] = useState("");
 
   const { getLoggedIn } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   async function login(e) {
     e.preventDefault(); // keeps the Browser from refreshing
