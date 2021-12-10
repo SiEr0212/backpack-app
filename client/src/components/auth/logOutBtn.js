@@ -1,7 +1,11 @@
 import React from "react";
 
 export default function logOutBtn() {
-  function logout() {}
+  async function logout() {
+
+
+  }
+
   return <button onClick={logout}>
   
   Logout
