@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useContext } from "react";
 import AuthContext from "../../context/AuthContext";
 
-export default function logOutBtn() {
+export default function LogOutBtn() {
 
   const { getLoggedIn } = useContext(AuthContext);
 
