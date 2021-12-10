@@ -23,7 +23,7 @@ export default function Login() {
         withCredentials: true,
       });
       getLoggedIn();
-      navigate('/')
+      navigate("/");
     } catch (err) {
       console.error(err);
     }
