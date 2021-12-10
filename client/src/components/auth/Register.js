@@ -23,6 +23,7 @@ export default function Register() {
         registerData,{
         withCredentials: true,
       });
+      getLoggedIn()
     } catch (err) {
       console.error(err);
     }
