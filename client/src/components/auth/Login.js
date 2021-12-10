@@ -6,7 +6,7 @@ export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const {getLoggedIn} = useContext(AuthContext);
+  const { getLoggedIn } = useContext(AuthContext);
 
   async function login(e) {
     e.preventDefault(); // keeps the Browser from refreshing
