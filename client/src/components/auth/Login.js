@@ -20,6 +20,7 @@ export default function Login() {
       await axios.post("http://localhost:5000/auth/login", loginData, {
         withCredentials: true,
       });
+      getLoggedIn();
     } catch (err) {
       console.error(err);
     }
