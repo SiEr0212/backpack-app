@@ -2,7 +2,8 @@ import React, {useState} from 'react'
 
 export default function CustomerForm() {
 
-const [customerNamen, setCustomerName] = useState("")
+const [customerName, setCustomerName] = useState("");
+
 
     return (
         <div>
@@ -11,5 +12,7 @@ const [customerNamen, setCustomerName] = useState("")
            <button type='submit'>Save new user</button>
            </form>
         </div>
+        
     )
+    console.log(customerName)
 }
