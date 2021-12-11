@@ -5,6 +5,7 @@ import Backpack from "./components/Backpack";
 import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
 import AuthContext from "./context/AuthContext";
+import Customers from "./components/customers/Customers";
 
 function Router() {
   const { loggedIn } = useContext(AuthContext);
@@ -24,7 +25,7 @@ function Router() {
         )}
         {loggedIn === true && (
           <>
-            <Route path="/customer" />
+            <Route path="/customer" element={<Customers />} />
 
             <Route path="/backpack" element={<Backpack />} />
           </>
