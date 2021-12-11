@@ -5,6 +5,7 @@ export default function CustomerForm() {
         <div>
            <form>
            <input type="text" placeholder='username'/>
+           <button type='submit'></button>
            </form>
         </div>
     )
