@@ -1,6 +1,9 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 export default function CustomerForm() {
+
+const [customerNamen, setCustomerName] = useState("")
+
     return (
         <div>
            <form>
