@@ -15,5 +15,5 @@ export default function CustomerForm() {
       </form>
     </div>
   );
-  console.log(customerName);
+  
 }
