@@ -9,7 +9,8 @@ export default function CustomerForm() {
         <input
           type="text"
           placeholder="username"
-          onChange={(e) => setCustomerName(e.value.target)}
+          onChange={(e) => {setCustomerName(e.value.target)}}
+          value = {customerName}
         />
         <button type="submit">Save new user</button>
       </form>
