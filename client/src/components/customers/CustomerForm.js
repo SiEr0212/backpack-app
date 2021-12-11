@@ -4,7 +4,7 @@ export default function CustomerForm() {
     return (
         <div>
            <form>
-           
+           <input type="text" placeholder='username'/>
            </form>
         </div>
     )
