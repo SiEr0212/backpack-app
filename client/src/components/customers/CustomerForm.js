@@ -5,7 +5,9 @@ export default function CustomerForm() {
   const [customerName, setCustomerName] = useState("");
 
   async function saveCustomer(e) {
+    
     e.preventDefault();
+
     try {
       const customerData = {
         name : customerName
