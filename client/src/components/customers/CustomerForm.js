@@ -7,7 +7,7 @@ export default function CustomerForm() {
   async function saveCustomer(e) {
     e.preventDefault();
     try {
-      const customerData = {}
+      const customerData = {};
       await axios.post("http://localhost:5000/customer/");
     } catch (err) {
       console.error(err);
