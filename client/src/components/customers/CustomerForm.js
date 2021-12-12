@@ -5,12 +5,11 @@ export default function CustomerForm() {
   const [customerName, setCustomerName] = useState("");
 
   async function saveCustomer(e) {
-    
     e.preventDefault();
 
     try {
       const customerData = {
-        name : customerName
+        name: customerName,
       };
       await axios.post("http://localhost:5000/customer/", customerName);
     } catch (err) {
