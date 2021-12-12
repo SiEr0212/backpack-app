@@ -8,6 +8,7 @@ export default function CustomerForm() {
     try {
       
     } catch (error) {
+      console.error(err)
       
     }
 
