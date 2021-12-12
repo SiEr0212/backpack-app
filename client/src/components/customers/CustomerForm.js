@@ -10,7 +10,7 @@ export default function CustomerForm() {
       const customerData = {
         name : customerName
       };
-      await axios.post("http://localhost:5000/customer/");
+      await axios.post("http://localhost:5000/customer/", customerName);
     } catch (err) {
       console.error(err);
     }
