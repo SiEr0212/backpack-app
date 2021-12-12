@@ -5,6 +5,11 @@ export default function CustomerForm() {
 
   async function saveCustomer(e) {
     e.preventDefault()
+    try {
+      
+    } catch (error) {
+      
+    }
 
   };
 
