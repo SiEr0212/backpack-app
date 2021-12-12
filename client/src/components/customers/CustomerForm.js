@@ -7,7 +7,7 @@ export default function CustomerForm() {
     e.preventDefault()
     try {
       
-    } catch (error) {
+    } catch (err) {
       console.error(err)
       
     }
