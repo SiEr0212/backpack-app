@@ -10,7 +10,7 @@ export default function CustomerForm() {
 
   return (
     <div>
-      <form>
+      <form onSubmit={saveCustomer()}>
         <input
           type="text"
           placeholder="username"
