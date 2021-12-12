@@ -3,7 +3,9 @@ import React, { useState } from "react";
 export default function CustomerForm() {
   const [customerName, setCustomerName] = useState("");
 
-  async function saveCustomer(e);
+  async function saveCustomer(e) {
+    
+  };
 
   return (
     <div>
