@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import CustomerForm from "./CustomerForm";
 import CustomerList from "./CustomerList";
 
@@ -14,7 +14,7 @@ export default function Customers() {
   useEffect(() =>{
       getCustomers()
   }, [])
-  
+
   return (
     <div>
       <CustomerForm />
