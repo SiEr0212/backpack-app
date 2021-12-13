@@ -10,6 +10,11 @@ export default function Customers() {
     const customerRes = await axios.get("hhtp://localhost:5000/customer/");
     setCustomers(customerRes.data);
   }
+
+  useEffect(() =>{
+      getCustomers()
+  }, [])
+  
   return (
     <div>
       <CustomerForm />
