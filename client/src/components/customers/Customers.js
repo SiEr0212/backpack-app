@@ -6,7 +6,7 @@ export default function Customers() {
   const [customers, setCustomers] = useState([]);
 
   async function getCustomers() {
-      
+      const customerRes =
   }
   return (
     <div>
