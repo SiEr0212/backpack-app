@@ -7,7 +7,7 @@ export default function Customers() {
   const [customers, setCustomers] = useState([]);
 
   async function getCustomers() {
-      const customerRes = await axios.get()
+      const customerRes = await axios.get("hhtp://localhost:5000/customer/")
   }
   return (
     <div>
