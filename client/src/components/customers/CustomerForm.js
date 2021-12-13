@@ -24,7 +24,7 @@ export default function CustomerForm() {
           type="text"
           placeholder="username"
           onChange={(e) => {
-            setCustomerName(e.value.target);
+            setCustomerName(e.target.value);
           }}
           value={customerName}
         />
