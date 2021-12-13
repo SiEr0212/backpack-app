@@ -11,7 +11,7 @@ export default function CustomerForm() {
       const customerData = {
         name: customerName,
       };
-      await axios.post("http://localhost:5000/customer/", customerName);
+      await axios.post("http://localhost:5000/customer/", customerData);
     } catch (err) {
       console.error(err);
     }
@@ -19,7 +19,7 @@ export default function CustomerForm() {
 
   return (
     <div>
-      <form onSubmit={saveCustomer()}>
+      <form onSubmit={saveCustomer}>
         <input
           type="text"
           placeholder="username"
