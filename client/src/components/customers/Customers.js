@@ -8,6 +8,7 @@ export default function Customers() {
 
   async function getCustomers() {
     const customerRes = await axios.get("hhtp://localhost:5000/customer/");
+    setCustomers
   }
   return (
     <div>
