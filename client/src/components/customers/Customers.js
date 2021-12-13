@@ -11,9 +11,9 @@ export default function Customers() {
     setCustomers(customerRes.data);
   }
 
-  useEffect(() =>{
-      getCustomers()
-  }, [])
+  useEffect(() => {
+    getCustomers();
+  }, []);
 
   return (
     <div>
