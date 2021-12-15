@@ -25,7 +25,7 @@ export default function Register() {
         withCredentials: true,
       });
       await getLoggedIn();
-      navigate('/');
+      navigate("/");
     } catch (err) {
       console.error(err);
     }
