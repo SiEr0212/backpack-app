@@ -14,5 +14,6 @@ MongoDB
 Express
 Node JS
 
+
 The authentication of the app is secured by technologies such as JsonWebTokens, Bcrypt and HTTP-only cookies.
 In the frontend I'll be using react hooks and the context API to deal with the state management of the user authentication.
