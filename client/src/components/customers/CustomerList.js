@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 export default function CustomerList() {
-    return (
-        <div>
-            <ul><li>List here</li></ul>
-        </div>
-    )
+  return (
+    <div>
+      <ul>
+        <li>List here</li>
+      </ul>
+    </div>
+  );
 }
