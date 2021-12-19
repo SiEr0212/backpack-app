@@ -1,15 +1,11 @@
 import React from "react";
 
-export default function CustomerList({customers}) {
-function renderCustomers() {
-
-}
+export default function CustomerList({ customers }) {
+  function renderCustomers() {}
 
   return (
     <div>
-      <ul>
-        {renderCustomers()}
-      </ul>
+      <ul>{renderCustomers()}</ul>
     </div>
   );
 }
