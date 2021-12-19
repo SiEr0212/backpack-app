@@ -1,14 +1,14 @@
 import axios from "axios";
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import CustomerForm from "./CustomerForm";
 import CustomerList from "./CustomerList";
 
-export default function Customers() {
+function Customers() {
   const [customers, setCustomers] = useState([]);
 
   async function getCustomers() {
-    const customerRes = await axios.get("http://localhost:5000/customer/");
-    setCustomers(customerRes.data);
+    const customersRes = await axios.get("http://localhost:5000/customer/");
+    setCustomers(customersRes.data);
   }
 
   useEffect(() => {
@@ -17,8 +17,10 @@ export default function Customers() {
 
   return (
     <div>
-      <CustomerForm />
-      <CustomerList customer={customers}/>
+      <CustomerForm getCustomers={getCustomers} />
+      <CustomerList customers={customers} />
     </div>
   );
 }
+
+export default Customers;
