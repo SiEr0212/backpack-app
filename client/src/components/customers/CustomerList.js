@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function CustomerList() {
+export default function CustomerList({customers}) {
   return (
     <div>
       <ul>
