@@ -4,7 +4,7 @@ export default function CustomerList({customers}) {
   return (
     <div>
       <ul>
-        <li>List here</li>
+        {{renderCustomers()}}
       </ul>
     </div>
   );
