@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-export default function CustomerForm() {
+export default function CustomerForm({getCustomers}) {
   const [customerName, setCustomerName] = useState("");
 
   async function saveCustomer(e) {
