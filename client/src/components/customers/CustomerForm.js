@@ -12,6 +12,7 @@ export default function CustomerForm({getCustomers}) {
         name: customerName,
       };
       await axios.post("http://localhost:5000/customer/", customerData);
+      getCustomers();
     } catch (err) {
       console.error(err);
     }
