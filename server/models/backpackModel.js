@@ -1,10 +1,10 @@
 const mongoose = require("mongoose");
 
 const backpackSchema = new mongoose.Schema({
-    "title": "My backpack",
-    weight: { type: Number},
-    name: { type: String, required: true },
-  });
+  title: "My backpack",
+  weight: { type: Number },
+  name: { type: String, required: true },
+});
 
 const Backpack = mongoose.model("backpack", backpackSchema);
 
