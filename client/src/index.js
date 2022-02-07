@@ -9,7 +9,7 @@ axios.defaults.withCredentials = true;
 
 ReactDOM.render(
   <BrowserRouter>
-    <App   />
+    <App />
   </BrowserRouter>,
   document.getElementById("root")
 );
