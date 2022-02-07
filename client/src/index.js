@@ -9,7 +9,9 @@ axios.defaults.withCredentials = true;
 
 ReactDOM.render(
   <BrowserRouter>
-    <App />
+    <App   style={{
+      backgroundColor: 'blue',
+    }}/>
   </BrowserRouter>,
   document.getElementById("root")
 );
