@@ -14,7 +14,10 @@ function Router() {
     <>
       <Navbar />
 
-      <Routes>
+      <Routes  style={{
+        backgroundColor: 'blue',
+        
+      }}>
         <Route exact path="/" />
         {loggedIn === false && (
           <>
