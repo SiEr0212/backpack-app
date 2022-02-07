@@ -53,9 +53,7 @@ function Backpack() {
   }
 
   return (
-    <div  style={{
-      backgroundColor: 'blue',
-    }}>
+    <div>
       <h1>Backpack App</h1>
       <br />
       <br />

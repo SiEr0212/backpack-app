@@ -9,7 +9,7 @@ function App() {
   return (
     <AuthContextProvider
     style={{
-        backgroundColor: 'blue',
+        backgroundColor: 'red',
       }}>
       <Router  />
     </AuthContextProvider>
