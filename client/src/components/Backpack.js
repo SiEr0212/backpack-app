@@ -3,6 +3,8 @@ import { v4 as uuidv4 } from "uuid";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import Card from "@mui/material/Card";
+import "./Backpack.css";
+
 
 const initialList = [
   {
