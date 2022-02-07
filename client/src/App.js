@@ -7,7 +7,10 @@ axios.defaults.withCredentials = true;
 
 function App() {
   return (
-    <AuthContextProvider>
+    <AuthContextProvider
+    style={{
+        backgroundColor: 'blue',
+      }}>
       <Router  />
     </AuthContextProvider>
   );
