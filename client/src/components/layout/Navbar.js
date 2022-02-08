@@ -17,7 +17,9 @@ export default function Navbar() {
         marginBottom: "6vw",
       }}
     >
-      <Link to="/">Home</Link>
+      <Link to="/" style={{ margin: "10px" }}>
+        Home
+      </Link>
 
       {loggedIn === false && (
         <>
