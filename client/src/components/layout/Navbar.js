@@ -33,7 +33,7 @@ export default function Navbar() {
         <>
           <Link to="/customer" style={{margin: "10px"}}>Customer</Link>
           <LogOutBtn />
-          <Link to="/backpack">Backpack</Link>
+          <Link to="/backpack" style={{margin: "10px"}}>Backpack</Link>
         </>
       )}
     </div>
