@@ -9,7 +9,7 @@ export default function Navbar() {
   console.log(loggedIn);
 
   return (
-    <div>
+    <div style={{ display: "flex", justifyContent: "center", width: "100vw",marginBottom: "6vw" }}>
       <Link to="/">Home</Link>
 
       {loggedIn === false && (
