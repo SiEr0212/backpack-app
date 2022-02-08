@@ -98,7 +98,7 @@ function Backpack() {
       </div>
       <br />
       <br />
-       <div style={{ display: "flex", justifyContent: "center", width: "10vw" }}>
+       <div style={{ display: "flex", justifyContent: "center", width: "100vw" }}>
       <Card
         variant="outlined"
         
