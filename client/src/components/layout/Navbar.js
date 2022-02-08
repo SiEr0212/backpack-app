@@ -26,7 +26,7 @@ export default function Navbar() {
           <Link to="/register" style={{ margin: "10px" }}>
             Register
           </Link>
-          <Link to="/login">Login</Link>
+          <Link to="/login" style={{margin: "10px"}}>Login</Link>
         </>
       )}
       {loggedIn === true && (
