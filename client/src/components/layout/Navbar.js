@@ -32,7 +32,6 @@ export default function Navbar() {
       {loggedIn === true && (
         <>
           <Link to="/customer" style={{margin: "10px"}}>Customer</Link>
-         
           <Link to="/backpack" style={{margin: "10px"}}>Backpack</Link> 
           <LogOutBtn />
         </>
