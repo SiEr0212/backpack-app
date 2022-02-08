@@ -23,7 +23,7 @@ export default function Navbar() {
 
       {loggedIn === false && (
         <>
-          <Link to="/register">Register</Link>
+          <Link to="/register" style={{margin: "10px"}}>Register</Link>
           <Link to="/login">Login</Link>
         </>
       )}
