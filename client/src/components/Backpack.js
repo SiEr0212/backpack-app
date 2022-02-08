@@ -97,7 +97,7 @@ function Backpack() {
       </div>
       <br />
       <br />
-      <Card variant="outlined">
+      <Card variant="outlined" style={{display: 'flex', justifyContent: 'center'}}>
         <ul style={{ listStyleType: "none" }}>
           {list.map((item) => (
             <li key={item.id}>
