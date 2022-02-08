@@ -56,7 +56,7 @@ function Backpack() {
 
   return (
     <div>
-      <h1>Backpack App</h1>
+      <h1 style={{display: 'flex', justifyContent: 'center'}}>Backpack App</h1>
       <br />
       <br />
       <h2>Organize your Backpack for your next Hike</h2>
