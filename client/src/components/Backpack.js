@@ -62,7 +62,7 @@ function Backpack() {
       <h2>Organize your Backpack for your next Hike</h2>
       <br />
       <br />
-      <div>
+      <div style={{display: 'flex', justifyContent: 'center'}}>
         <TextField
           id="outlined-basic"
           label="Item name"
