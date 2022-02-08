@@ -119,7 +119,7 @@ function Backpack() {
         </ul>
       </Card>
 
-      <h2>Total weight: {finalWeightTotal / 1000} kg</h2>
+      <h2 style={{display: 'flex', justifyContent: 'center'}}>Total weight: {finalWeightTotal / 1000} kg</h2>
     </div>
   );
 }
