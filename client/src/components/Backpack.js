@@ -5,7 +5,6 @@ import TextField from "@mui/material/TextField";
 import Card from "@mui/material/Card";
 import "./Backpack.css";
 
-
 const initialList = [
   {
     id: "a",
@@ -56,13 +55,15 @@ function Backpack() {
 
   return (
     <div>
-      <h1 style={{display: 'flex', justifyContent: 'center'}}>Backpack App</h1>
+      <h1 style={{ display: "flex", justifyContent: "center" }}>
+        Backpack App
+      </h1>
       <br />
       <br />
       <h2>Organize your Backpack for your next Hike</h2>
       <br />
       <br />
-      <div style={{display: 'flex', justifyContent: 'center'}}>
+      <div style={{ display: "flex", justifyContent: "center" }}>
         <TextField
           id="outlined-basic"
           label="Item name"
@@ -97,7 +98,10 @@ function Backpack() {
       </div>
       <br />
       <br />
-      <Card variant="outlined" style={{display: 'flex', justifyContent: 'center'}}>
+      <Card
+        variant="outlined"
+        style={{ display: "flex", justifyContent: "center" }}
+      >
         <ul style={{ listStyleType: "none" }}>
           {list.map((item) => (
             <li key={item.id}>
