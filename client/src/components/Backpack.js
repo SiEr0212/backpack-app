@@ -60,7 +60,9 @@ function Backpack() {
       </h1>
       <br />
       <br />
-      <h2 style={{display: 'flex', justifyContent: 'center'}}>Organize your Backpack for your next Hike</h2>
+      <h2 style={{ display: "flex", justifyContent: "center" }}>
+        Organize your Backpack for your next Hike
+      </h2>
       <br />
       <br />
       <div style={{ display: "flex", justifyContent: "center" }}>
@@ -98,31 +100,30 @@ function Backpack() {
       </div>
       <br />
       <br />
-       <div style={{ display: "flex", justifyContent: "center", width: "100vw" }}>
-      <Card
-        variant="outlined"
-        
+      <div
+        style={{ display: "flex", justifyContent: "center", width: "100vw" }}
       >
-     
-        <ul style={{ listStyleType: "none" }}>
-          {list.map((item) => (
-            <li key={item.id}>
-              {item.name} {item.weight} g
-              <br />
-              <Button
-                variant="contained"
-                type="button"
-                onClick={() => handleRemove(item.id)}
-              >
-                Remove
-              </Button>
-            </li>
-          ))}
-        </ul>
-      
-      </Card>
-  </div>
-      <h2 style={{display: 'flex', justifyContent: 'center'}}>Total weight: {finalWeightTotal / 1000} kg</h2>
+        <Card variant="outlined">
+          <ul style={{ listStyleType: "none" }}>
+            {list.map((item) => (
+              <li key={item.id}>
+                {item.name} {item.weight} g
+                <br />
+                <Button
+                  variant="contained"
+                  type="button"
+                  onClick={() => handleRemove(item.id)}
+                >
+                  Remove
+                </Button>
+              </li>
+            ))}
+          </ul>
+        </Card>
+      </div>
+      <h2 style={{ display: "flex", justifyContent: "center" }}>
+        Total weight: {finalWeightTotal / 1000} kg
+      </h2>
     </div>
   );
 }
