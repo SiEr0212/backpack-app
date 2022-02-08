@@ -60,7 +60,7 @@ function Backpack() {
       </h1>
       <br />
       <br />
-      <h2>Organize your Backpack for your next Hike</h2>
+      <h2 style={{display: 'flex', justifyContent: 'center'}}>Organize your Backpack for your next Hike</h2>
       <br />
       <br />
       <div style={{ display: "flex", justifyContent: "center" }}>
