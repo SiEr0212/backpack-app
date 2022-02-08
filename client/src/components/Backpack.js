@@ -100,8 +100,9 @@ function Backpack() {
       <br />
       <Card
         variant="outlined"
-        style={{ display: "flex", justifyContent: "center" }}
+        style={{ display: "flex", justifyContent: "center", width: "10vw" }}
       >
+      <div>
         <ul style={{ listStyleType: "none" }}>
           {list.map((item) => (
             <li key={item.id}>
@@ -117,6 +118,7 @@ function Backpack() {
             </li>
           ))}
         </ul>
+        </div>
       </Card>
 
       <h2 style={{display: 'flex', justifyContent: 'center'}}>Total weight: {finalWeightTotal / 1000} kg</h2>
