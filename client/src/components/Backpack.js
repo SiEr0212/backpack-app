@@ -60,7 +60,7 @@ function Backpack() {
       </h1>
       <br />
       <br />
-      <h2 style={{ display: "flex", justifyContent: "center" }}>
+      <h2 style={{ display: "flex", justifyContent: "center" }} id="backpackDescription">
         Organize your Backpack for your next Hike
       </h2>
       <br />
