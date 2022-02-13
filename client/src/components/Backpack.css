@@ -1,6 +1,7 @@
 body {
   background-image: url("../assets/backpack-pngrepo-com.png");
   background-repeat: no-repeat, repeat;
+  background-position: 50%;
 }
 
 /*
