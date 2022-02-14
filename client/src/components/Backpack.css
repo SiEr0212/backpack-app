@@ -16,12 +16,10 @@ body {
 */
 #backpackTitle {
   margin-top: -4vh;
-  margin-bottom: 24vh;
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
+  margin-bottom: 24vh;;
+  
 }
 
-#backpackDescription {
-  margin-bottom: 1vh;
-  font-family: "Poppins", sans-serif;
+#backpackDescription{
+margin-bottom: 1vh;
 }
