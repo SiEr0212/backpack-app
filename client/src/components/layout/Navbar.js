@@ -26,15 +26,16 @@ export default function Navbar() {
 
       {loggedIn === false && (
         <>
-        <Button variant="outlined">
-
-          <Link to="/register" style={{ margin: "10px" }}>
-            Register
-          </Link>
+          <Button variant="outlined">
+            <Link to="/register" style={{ margin: "10px" }}>
+              Register
+            </Link>
           </Button>
+          <Button variant="outlined">
           <Link to="/login" style={{ margin: "10px" }}>
             Login
           </Link>
+          </Button>
         </>
       )}
       {loggedIn === true && (
