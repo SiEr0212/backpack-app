@@ -10,7 +10,7 @@ export default function Navbar() {
   console.log(loggedIn);
 
   return (
-    <div
+    <Card
       style={{
         display: "flex",
         justifyContent: "center",
@@ -37,6 +37,6 @@ export default function Navbar() {
           <LogOutBtn />
         </>
       )}
-    </div>
+    </Card>
   );
 }
