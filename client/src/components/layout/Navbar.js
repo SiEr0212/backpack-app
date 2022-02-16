@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import AuthContext from "../../context/AuthContext";
 import LogOutBtn from "../auth/LogOutBtn";
-import Card from "@mui/material/Card";
+import Button from "@mui/material/Card";
 
 export default function Navbar() {
   const { loggedIn } = useContext(AuthContext);
