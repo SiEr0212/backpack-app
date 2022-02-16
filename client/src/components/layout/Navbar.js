@@ -18,9 +18,11 @@ export default function Navbar() {
         marginBottom: "6vw",
       }}
     >
+    <Button variant="outlined">
       <Link to="/" style={{ margin: "10px" }}>
         Home
       </Link>
+      </Button>
 
       {loggedIn === false && (
         <>
