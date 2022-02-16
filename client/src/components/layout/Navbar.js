@@ -45,9 +45,11 @@ export default function Navbar() {
             Customer
           </Link>
           </Button>
+          <Button variant="outlined">
           <Link to="/backpack" style={{ margin: "10px" }}>
             Backpack
           </Link>
+          </Button>
           <LogOutBtn />
         </>
       )}
