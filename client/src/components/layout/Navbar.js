@@ -31,7 +31,7 @@ export default function Navbar() {
               Register
             </Link>
           </Button>
-          <Button variant="outlined">
+          <Button variant="outlined"color="secondary">
             <Link to="/login" style={{ margin: "10px" }}>
               Login
             </Link>
@@ -40,12 +40,12 @@ export default function Navbar() {
       )}
       {loggedIn === true && (
         <>
-          <Button variant="outlined">
+          <Button variant="outlined"color="secondary">
             <Link to="/customer" style={{ margin: "10px" }}>
               Customer
             </Link>
           </Button>
-          <Button variant="outlined">
+          <Button variant="outlined"color="secondary">
             <Link to="/backpack" style={{ margin: "10px" }}>
               Backpack
             </Link>
