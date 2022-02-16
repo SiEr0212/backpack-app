@@ -32,23 +32,23 @@ export default function Navbar() {
             </Link>
           </Button>
           <Button variant="outlined">
-          <Link to="/login" style={{ margin: "10px" }}>
-            Login
-          </Link>
+            <Link to="/login" style={{ margin: "10px" }}>
+              Login
+            </Link>
           </Button>
         </>
       )}
       {loggedIn === true && (
         <>
-        <Button variant="outlined">
-          <Link to="/customer" style={{ margin: "10px" }}>
-            Customer
-          </Link>
+          <Button variant="outlined">
+            <Link to="/customer" style={{ margin: "10px" }}>
+              Customer
+            </Link>
           </Button>
           <Button variant="outlined">
-          <Link to="/backpack" style={{ margin: "10px" }}>
-            Backpack
-          </Link>
+            <Link to="/backpack" style={{ margin: "10px" }}>
+              Backpack
+            </Link>
           </Button>
           <LogOutBtn />
         </>
