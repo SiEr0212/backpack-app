@@ -10,7 +10,7 @@ export default function Navbar() {
   console.log(loggedIn);
 
   return (
-    <Card
+    <div
       style={{
         display: "flex",
         justifyContent: "center",
@@ -27,22 +27,16 @@ export default function Navbar() {
           <Link to="/register" style={{ margin: "10px" }}>
             Register
           </Link>
-          <Link to="/login" style={{ margin: "10px" }}>
-            Login
-          </Link>
+          <Link to="/login" style={{margin: "10px"}}>Login</Link>
         </>
       )}
       {loggedIn === true && (
         <>
-          <Link to="/customer" style={{ margin: "10px" }}>
-            Customer
-          </Link>
-          <Link to="/backpack" style={{ margin: "10px" }}>
-            Backpack
-          </Link>
+          <Link to="/customer" style={{margin: "10px"}}>Customer</Link>
+          <Link to="/backpack" style={{margin: "10px"}}>Backpack</Link> 
           <LogOutBtn />
         </>
       )}
-    </Card>
+    </div>
   );
 }
