@@ -18,24 +18,33 @@ export default function Navbar() {
         marginBottom: "6vw",
       }}
     >
-    <Button variant="outlined">
-      <Link to="/" style={{ margin: "10px" }}>
-        Home
-      </Link>
+      <Button variant="outlined">
+        <Link to="/" style={{ margin: "10px" }}>
+          Home
+        </Link>
       </Button>
 
       {loggedIn === false && (
         <>
+        <Button variant="outlined">
+
           <Link to="/register" style={{ margin: "10px" }}>
             Register
           </Link>
-          <Link to="/login" style={{margin: "10px"}}>Login</Link>
+          </Button>
+          <Link to="/login" style={{ margin: "10px" }}>
+            Login
+          </Link>
         </>
       )}
       {loggedIn === true && (
         <>
-          <Link to="/customer" style={{margin: "10px"}}>Customer</Link>
-          <Link to="/backpack" style={{margin: "10px"}}>Backpack</Link> 
+          <Link to="/customer" style={{ margin: "10px" }}>
+            Customer
+          </Link>
+          <Link to="/backpack" style={{ margin: "10px" }}>
+            Backpack
+          </Link>
           <LogOutBtn />
         </>
       )}
