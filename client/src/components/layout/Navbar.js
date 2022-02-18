@@ -18,7 +18,7 @@ export default function Navbar() {
         marginBottom: "6vw",
       }}
     >
-      <Button variant="contained">
+      <Button variant="contained" class="navButtons">
         <Link to="/" style={{ margin: "10px" }}>
           Home
         </Link>
