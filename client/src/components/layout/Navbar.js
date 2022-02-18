@@ -41,7 +41,7 @@ export default function Navbar() {
       {loggedIn === true && (
         <>
           <Button variant="contained">
-            <Link to="/customer" style={{ margin: "10px" }}>
+            <Link to="/customer" style={{ margin: "10px",marginLeft: "10px" }}>
               Customer
             </Link>
           </Button>
