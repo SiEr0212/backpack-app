@@ -31,7 +31,7 @@ export default function Navbar() {
               Register
             </Link>
           </Button>
-          <Button variant="outlined" color="secondary">
+          <Button variant="outlined" color="secondary" class="navButtons">
             <Link to="/login" style={{ margin: "10px" }}>
               Login
             </Link>
