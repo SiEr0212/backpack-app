@@ -45,7 +45,7 @@ export default function Navbar() {
               Customer
             </Link>
           </Button>
-          <Button variant="outlined"color="secondary">
+          <Button variant="contained"color="secondary">
             <Link to="/backpack" style={{ margin: "10px" }}>
               Backpack
             </Link>
