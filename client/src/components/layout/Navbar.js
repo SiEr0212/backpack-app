@@ -26,7 +26,7 @@ export default function Navbar() {
 
       {loggedIn === false && (
         <>
-          <Button variant="contained">
+          <Button variant="contained" class="navButtons">
             <Link to="/register" style={{ margin: "10px" }}>
               Register
             </Link>
