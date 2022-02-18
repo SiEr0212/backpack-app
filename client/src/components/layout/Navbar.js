@@ -31,7 +31,7 @@ export default function Navbar() {
               Register
             </Link>
           </Button>
-          <Button variant="outlined"color="secondary">
+          <Button variant="outlined" color="secondary">
             <Link to="/login" style={{ margin: "10px" }}>
               Login
             </Link>
@@ -41,7 +41,7 @@ export default function Navbar() {
       {loggedIn === true && (
         <>
           <Button variant="contained" class="navButtons">
-            <Link to="/customer" style={{ margin: "10px",marginLeft: "10px" }}>
+            <Link to="/customer" style={{ margin: "10px", marginLeft: "10px" }}>
               Customer
             </Link>
           </Button>
