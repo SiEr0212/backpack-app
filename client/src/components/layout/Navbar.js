@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import AuthContext from "../../context/AuthContext";
 import LogOutBtn from "../auth/LogOutBtn";
 import Button from "@mui/material/Card";
+import "./Navbar.css";
 
 export default function Navbar() {
   const { loggedIn } = useContext(AuthContext);
