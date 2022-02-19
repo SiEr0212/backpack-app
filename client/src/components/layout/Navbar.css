@@ -1,5 +1,6 @@
 .navButtons {
     background-color: rgba(65, 145, 12, 0.87);
     border-radius: 6px;
-    width: 6vw;
+    width: 5vw;
+    height: 2vh;
 }
