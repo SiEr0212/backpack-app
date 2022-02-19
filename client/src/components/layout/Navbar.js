@@ -20,7 +20,7 @@ export default function Navbar() {
       }}
     >
       <Button variant="contained" class="navButtons">
-        <Link to="/" style={{ margin: "10px" }}>
+        <Link to="/" style={{ margin: "10px", textDecoration: "none"}}>
           Home
         </Link>
       </Button>
