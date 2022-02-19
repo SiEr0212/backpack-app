@@ -12,4 +12,5 @@
 
 .navButtons :hover{
     background-color: #383;
+    border-style: 13px solid black;
 }
