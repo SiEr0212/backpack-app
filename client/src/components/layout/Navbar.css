@@ -9,3 +9,7 @@
   font-weight: 600;
   margin: 10px;
 }
+
+.navButtons :hover{
+    background-color: #383;
+}
