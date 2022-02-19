@@ -2,8 +2,9 @@
     background-color: rgba(255, 241, 47, 0.87);
     border-radius: 6px;
     width: 5vw;
-    height: 2vh;
-    font-size: larger;
-    font:700 arial;
+    height: 2vh;  
     text-decoration: none;
+    font-size: larger;
+    font-family: "Poppins", sans-serif;
+  
 }
