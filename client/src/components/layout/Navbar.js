@@ -33,7 +33,7 @@ export default function Navbar() {
             </Link>
           </Button>
           <Button variant="outlined" color="secondary" class="navButtons">
-            <Link to="/login" style={{ margin: "10px" }}>
+            <Link to="/login" style={{ margin: "10px", textDecoration: "none" }}>
               Login
             </Link>
           </Button>
