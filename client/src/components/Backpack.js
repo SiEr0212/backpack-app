@@ -55,12 +55,10 @@ function Backpack() {
 
   return (
     <div class="flexContainer">
-      <h1 id="backpackTitle">
-        Backpack App
-      </h1>
+      <h1 id="backpackTitle">Backpack App</h1>
       <br />
       <br />
-      <h2  id="backpackDescription">
+      <h2 id="backpackDescription">
         Organize your Backpack for your next Hike
       </h2>
       <br />
