@@ -55,15 +55,12 @@ function Backpack() {
 
   return (
     <div>
-      <h1
-        style={{ display: "flex", justifyContent: "center" }}
-        id="backpackTitle"
-      >
+      <h1 style={{ display: "flex", justifyContent: "center" }} id="backpackTitle">
         Backpack App
       </h1>
       <br />
       <br />
-      <h2 id="backpackDescription">
+      <h2 style={{ display: "flex", justifyContent: "center" }} id="backpackDescription">
         Organize your Backpack for your next Hike
       </h2>
       <br />
