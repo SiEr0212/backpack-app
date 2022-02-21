@@ -63,7 +63,7 @@ function Backpack() {
       </h2>
       <br />
       <br />
-      <div style={{ display: "flex", justifyContent: "center" }}>
+      <div>
         <TextField
           id="outlined-basic"
           label="Item name"
