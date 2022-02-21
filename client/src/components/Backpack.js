@@ -54,7 +54,7 @@ function Backpack() {
   }
 
   return (
-    <div>
+    <div class="flexContainer">
       <h1 id="backpackTitle">
         Backpack App
       </h1>
