@@ -55,7 +55,7 @@ function Backpack() {
 
   return (
     <div>
-      <h1 style={{ display: "flex", justifyContent: "center" }} id="backpackTitle">
+      <h1 id="backpackTitle">
         Backpack App
       </h1>
       <br />
