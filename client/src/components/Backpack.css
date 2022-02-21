@@ -25,6 +25,13 @@ body {
   border-style: 4px solid black;
   text-decoration: none;
   margin: 10px;
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+
 }
 
 #backpackDescription {
