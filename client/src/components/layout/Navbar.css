@@ -25,3 +25,8 @@
   font-weight: 600;
   margin: 10px;
 }
+
+
+#logoutBtn :hover {
+  text-shadow: 0 0 10px #ff0000;
+}
