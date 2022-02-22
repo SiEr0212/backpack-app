@@ -14,5 +14,5 @@ export default function LogOutBtn() {
     navigate("/");
   }
 
-  return <button onClick={logout}>Logout</button>;
+  return <button onClick={logout} id="logoutBtn">Logout</button>;
 }
