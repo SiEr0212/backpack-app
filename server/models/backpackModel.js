@@ -9,4 +9,4 @@ const backpackSchema = new mongoose.Schema({
 
 const Backpack = mongoose.model("backpack", backpackSchema);
 
-module.exports = Customer;
+module.exports = Backpack;
