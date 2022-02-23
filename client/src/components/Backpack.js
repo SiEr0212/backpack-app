@@ -39,6 +39,7 @@ function Backpack() {
 
   function handleAdd() {
     const newList = list.concat({ weight, name, id: uuidv4() });
+    console.log(newList);
 
     setList(newList);
 
