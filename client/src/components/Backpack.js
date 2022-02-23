@@ -39,7 +39,8 @@ function Backpack() {
 
   function handleAdd() {
     const newList = list.concat({ weight, name, id: uuidv4() });
-    console.log(newList);
+    
+    console.log(newList);//data i wantto send to the db
 
     setList(newList);
 
