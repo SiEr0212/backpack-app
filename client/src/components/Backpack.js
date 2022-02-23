@@ -24,10 +24,10 @@ function Backpack() {
   const [list, setList] = useState(initialList);
   const [name, setName] = useState("");
   const [weight, setWeight] = useState(0);
-  
+
   let finalWeightTotal = 0;
   const weightTotal = list.map((c) => (finalWeightTotal += +c.weight));
-  console.log(list);
+  console.log("weighTotal" + list);
 
   function handleChange(e) {
     setName(e.target.value);
