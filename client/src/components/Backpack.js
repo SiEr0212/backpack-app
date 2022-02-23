@@ -50,9 +50,10 @@ function Backpack() {
     const newList = list.filter((item) => item.id !== id);
 
     setList(newList);
+    console.log(newList);//backpack items and their weight
   }
 
-  console.log(list);//backpack items and their weight
+  
 
   return (
     <div class="flexContainer">
