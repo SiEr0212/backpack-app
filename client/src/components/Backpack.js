@@ -27,7 +27,7 @@ function Backpack() {
 
   let finalWeightTotal = 0;
   const weightTotal = list.map((c) => (finalWeightTotal += +c.weight));
-  console.log("weighTotal" + list);
+  console.log(weightTotal);
 
   function handleChange(e) {
     setName(e.target.value);
