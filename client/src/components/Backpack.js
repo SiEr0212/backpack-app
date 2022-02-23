@@ -44,7 +44,7 @@ function Backpack() {
 
     setList(newList);
 
-    initialList.push(newList);// das durch state update lösen, im moment wird ein komplettes array ins andere gepusht mit doppel items!
+    initialList.push(newList); // das durch state update lösen, im moment wird ein komplettes array ins andere gepusht mit doppel items!
 
     setName("");
 
