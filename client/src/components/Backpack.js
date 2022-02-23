@@ -48,7 +48,7 @@ function Backpack() {
 
     setName("");
 
-    console.log(initialList)
+    console.log(initialList);
   }
 
   function handleRemove(id) {
