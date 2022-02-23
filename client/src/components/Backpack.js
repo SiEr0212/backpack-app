@@ -44,7 +44,10 @@ function Backpack() {
 
     setList(newList);
 
+    initialList.push(newList)
+
     setName("");
+    
   }
 
   function handleRemove(id) {
