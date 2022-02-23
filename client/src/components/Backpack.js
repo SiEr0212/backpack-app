@@ -52,6 +52,8 @@ function Backpack() {
     setList(newList);
   }
 
+  console.log(list);
+
   return (
     <div class="flexContainer">
       <h1 id="backpackTitle">Backpack App</h1>
