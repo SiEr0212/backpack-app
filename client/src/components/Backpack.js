@@ -52,7 +52,7 @@ function Backpack() {
     setList(newList);
   }
 
-  console.log(list);
+  console.log(list);//backpack items and their weight
 
   return (
     <div class="flexContainer">
