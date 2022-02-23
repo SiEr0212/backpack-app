@@ -39,25 +39,24 @@ function Backpack() {
 
   function handleAdd() {
     const newList = list.concat({ weight, name, id: uuidv4() });
-    
-    console.log(newList);//data I want to send to the db
+
+    console.log(newList); //data I want to send to the db
 
     setList(newList);
 
-    initialList.push(newList)
+    initialList.push(newList);
 
     setName("");
-    
+
+    console.log(initialList)
   }
 
   function handleRemove(id) {
     const newList = list.filter((item) => item.id !== id);
 
     setList(newList);
-    console.log(newList);//backpack items and their weight
+    console.log(newList); //backpack items and their weight
   }
-
-  
 
   return (
     <div class="flexContainer">
