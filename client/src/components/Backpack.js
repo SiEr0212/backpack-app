@@ -123,7 +123,6 @@ function Backpack() {
                   >
                     <DeleteIcon fontSize="small" />
                   </IconButton>
-                
               </li>
             ))}
           </ul>
