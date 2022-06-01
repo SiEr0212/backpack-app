@@ -125,9 +125,11 @@ function Backpack() {
           </ul>
         </Card>
       </div>
+      <Card variant="outlined">
       <h2 style={{ display: "flex", justifyContent: "center" }}>
         Total weight: {finalWeightTotal / 1000} kg
       </h2>
+      </Card>
     </div>
   );
 }
