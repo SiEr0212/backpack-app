@@ -4,8 +4,7 @@ import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import Card from "@mui/material/Card";
 import "./Backpack.css";
-import ScaleIcon from '@mui/icons-material/Scale';
-
+import ScaleIcon from "@mui/icons-material/Scale";
 
 const initialList = [
   {
@@ -128,14 +127,10 @@ function Backpack() {
         </Card>
       </div>
       <Card variant="outlined">
-        
-          <h2 style={{ display: "flex", justifyContent: "center" }}>
-          <ScaleIcon>
-            
-            </ScaleIcon>
-            Total weight: {finalWeightTotal / 1000} kg
-          </h2>
-      
+        <h2 style={{ display: "flex", justifyContent: "center" }}>
+          <ScaleIcon></ScaleIcon>
+          Total weight: {finalWeightTotal / 1000} kg
+        </h2>
       </Card>
     </div>
   );
