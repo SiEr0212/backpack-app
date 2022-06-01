@@ -130,7 +130,9 @@ function Backpack() {
       <Card variant="outlined">
         <Button variant="contained" disableElevation>
           <h2 style={{ display: "flex", justifyContent: "center" }}>
+          <ScaleIcon>
             Total weight: {finalWeightTotal / 1000} kg
+            </ScaleIcon>
           </h2>
         </Button>
       </Card>
