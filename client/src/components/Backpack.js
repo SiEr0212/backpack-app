@@ -5,9 +5,8 @@ import TextField from "@mui/material/TextField";
 import Card from "@mui/material/Card";
 import "./Backpack.css";
 import ScaleIcon from "@mui/icons-material/Scale";
-import Stack from '@mui/material/Stack';
-import IconButton from '@mui/material/IconButton';
-import DeleteIcon from '@mui/icons-material/Delete';
+import IconButton from "@mui/material/IconButton";
+import DeleteIcon from "@mui/icons-material/Delete";
 
 const initialList = [
   {
@@ -116,15 +115,18 @@ function Backpack() {
             {list.map((item) => (
               <li key={item.id}>
                 {item.name} {item.weight} g
-                
                 <Button
                   variant="contained"
                   type="button"
                   onClick={() => handleRemove(item.id)}
                 >
-                   <IconButton aria-label="delete" size="small" onClick={() => handleRemove(item.id)}>
-                  <DeleteIcon fontSize="small" />
-                </IconButton>
+                  <IconButton
+                    aria-label="delete"
+                    size="small"
+                    onClick={() => handleRemove(item.id)}
+                  >
+                    <DeleteIcon fontSize="small" />
+                  </IconButton>
                 </Button>
               </li>
             ))}
