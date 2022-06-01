@@ -122,7 +122,7 @@ function Backpack() {
                   type="button"
                   onClick={() => handleRemove(item.id)}
                 >
-                  Remove <IconButton aria-label="delete" size="small">
+                   <IconButton aria-label="delete" size="small">
                   <DeleteIcon fontSize="small" />
                 </IconButton>
                 </Button>
