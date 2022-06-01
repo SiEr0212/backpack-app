@@ -7,7 +7,7 @@ import "./Backpack.css";
 import ScaleIcon from "@mui/icons-material/Scale";
 import Stack from '@mui/material/Stack';
 import IconButton from '@mui/material/IconButton';
-import DeleteIcon from '@mui/icons-material/Delete';i
+import DeleteIcon from '@mui/icons-material/Delete';
 
 const initialList = [
   {
