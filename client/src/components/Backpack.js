@@ -116,7 +116,7 @@ function Backpack() {
             {list.map((item) => (
               <li key={item.id}>
                 {item.name} {item.weight} g
-                <br />
+                
                 <Button
                   variant="contained"
                   type="button"
