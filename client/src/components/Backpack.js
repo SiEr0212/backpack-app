@@ -115,11 +115,7 @@ function Backpack() {
             {list.map((item) => (
               <li key={item.id}>
                 {item.name} {item.weight} g
-                <Button
-                  variant="contained"
-                  type="button"
-                  onClick={() => handleRemove(item.id)}
-                >
+                
                   <IconButton
                     aria-label="delete"
                     size="small"
@@ -127,7 +123,7 @@ function Backpack() {
                   >
                     <DeleteIcon fontSize="small" />
                   </IconButton>
-                </Button>
+                
               </li>
             ))}
           </ul>
