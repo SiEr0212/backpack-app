@@ -4,6 +4,8 @@ import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import Card from "@mui/material/Card";
 import "./Backpack.css";
+import ScaleIcon from '@mui/icons-material/Scale';
+
 
 const initialList = [
   {
