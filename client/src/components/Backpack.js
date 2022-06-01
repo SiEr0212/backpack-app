@@ -133,6 +133,7 @@ function Backpack() {
           <ScaleIcon>
             
             </ScaleIcon>
+            Total weight: {finalWeightTotal / 1000} kg
           </h2>
         </Button>
       </Card>
