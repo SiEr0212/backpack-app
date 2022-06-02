@@ -131,6 +131,13 @@ function Backpack() {
                   >
                     <DeleteIcon fontSize="small" />
                   </IconButton>
+                  <IconButton
+                    aria-label="delete"
+                    size="small"
+                    onClick={() => handle(item.id)}
+                  >
+                    <DeleteIcon fontSize="small" />
+                  </IconButton>
               </li>
             ))}
           </ul>
