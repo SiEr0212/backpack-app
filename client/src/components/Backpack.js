@@ -63,8 +63,11 @@ function Backpack() {
   }
 
   function handleSortList (id) {
-    
+    const newList = list.sort((a, b) => a - b);
+    setList(newList);
+
     //list.sort((item) => item.id)
+    console.log(newList)
   }
 
   return (
