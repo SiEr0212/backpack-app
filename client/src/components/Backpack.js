@@ -62,6 +62,8 @@ function Backpack() {
     console.log(newList); //backpack items and their weight
   }
 
+  function handleSortList () {}
+
   return (
     <div class="flexContainer">
       <h1 id="backpackTitle">Backpack App</h1>
