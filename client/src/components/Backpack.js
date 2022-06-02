@@ -62,7 +62,10 @@ function Backpack() {
     console.log(newList); //backpack items and their weight
   }
 
-  function handleSortList () {}
+  function handleSortList (id) {
+    
+    //list.sort((item) => item.id)
+  }
 
   return (
     <div class="flexContainer">
