@@ -62,12 +62,13 @@ function Backpack() {
     console.log(newList); //backpack items and their weight
   }
 
-  function handleSortList (id) { //function to sort items by weight
+  function handleSortList(id) {
+    //function to sort items by weight
     const newList = list.sort((a, b) => a - b);
     setList(newList);
 
     //list.sort((item) => item.id)
-    console.log(newList)
+    console.log(newList);
   }
 
   return (
@@ -123,21 +124,20 @@ function Backpack() {
             {list.map((item) => (
               <li key={item.id}>
                 {item.name} {item.weight} g
-                
-                  <IconButton
-                    aria-label="delete"
-                    size="small"
-                    onClick={() => handleRemove(item.id)}
-                  >
-                    <DeleteIcon fontSize="small" />
-                  </IconButton>
-                  <IconButton
-                    aria-label="delete"
-                    size="small"
-                    onClick={() => handle(item.id)}
-                  >
-                    <DeleteIcon fontSize="small" />
-                  </IconButton>
+                <IconButton
+                  aria-label="delete"
+                  size="small"
+                  onClick={() => handleRemove(item.id)}
+                >
+                  <DeleteIcon fontSize="small" />
+                </IconButton>
+                <IconButton
+                  aria-label="delete"
+                  size="small"
+                  onClick={() => handleSortList(item.id)}
+                >
+                  <DeleteIcon fontSize="small" />
+                </IconButton>
               </li>
             ))}
           </ul>
