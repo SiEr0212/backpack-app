@@ -7,7 +7,7 @@ import "./Backpack.css";
 import ScaleIcon from "@mui/icons-material/Scale";
 import IconButton from "@mui/material/IconButton";
 import DeleteIcon from "@mui/icons-material/Delete";
-import SortIcon from '@mui/icons-material/Sort';
+import SortIcon from "@mui/icons-material/Sort";
 
 const initialList = [
   {
@@ -67,7 +67,7 @@ function Backpack() {
   function handleSortList(id) {
     //function to sort items by weight
     const newSortedWeightList = sortedWeightList.sort((a, b) => a - b);
-   setSortedWeightList(newSortedWeightList);
+    setSortedWeightList(newSortedWeightList);
 
     //list.sort((item) => item.id)//
     //console.log(`sorted list ${JSON.stringify(newSortedWeightList)}`);//
