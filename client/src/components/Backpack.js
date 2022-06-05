@@ -68,7 +68,7 @@ function Backpack() {
     setList(newList);
 
     //list.sort((item) => item.id)
-    console.log(newList);
+    console.log(`sorted list ${newList}`);
   }
 
   return (
