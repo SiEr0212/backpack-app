@@ -61,7 +61,7 @@ function Backpack() {
     const newList = list.filter((item) => item.id !== id);
 
     setList(newList);
-    console.log(`newList ${JSON.stringify(newList)}`); //backpack items and their weight
+    console.log((newList)); //backpack items and their weight
   }
 
   function handleSortList(id) {
