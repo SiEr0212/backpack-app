@@ -28,7 +28,7 @@ function Backpack() {
   const [list, setList] = useState(initialList);
   const [name, setName] = useState("");
   const [weight, setWeight] = useState(0);
-  const [sortedWeightList, setsSortedWeightList] = useState();
+  const [sortedWeightList, setSortedWeightList] = useState();
 
   let finalWeightTotal = 0;
   const weightTotal = list.map((c) => (finalWeightTotal += +c.weight));
@@ -67,7 +67,7 @@ function Backpack() {
   function handleSortList(id) {
     //function to sort items by weight
     const newSortedWeightList = SortedWeightList.sort((a, b) => a - b);
-   setSortedWeightListt(newSortedWeightList);
+   setSortedWeightList(newSortedWeightList);
 
     //list.sort((item) => item.id)
     console.log(`sorted list ${newSortedWeightList}`);
