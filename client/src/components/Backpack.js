@@ -67,7 +67,7 @@ function Backpack() {
   function handleSortList(id) {
     //function to sort items by weight
     const newSortedWeightList = SortedWeightList.sort((a, b) => a - b);
-   sortedWeightListt(newSortedWeightList);
+   setSortedWeightListt(newSortedWeightList);
 
     //list.sort((item) => item.id)
     console.log(`sorted list ${newSortedWeightList}`);
