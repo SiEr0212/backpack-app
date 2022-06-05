@@ -138,7 +138,7 @@ function Backpack() {
                   size="small"
                   onClick={() => handleSortList(item.id)}
                 >
-                  <DeleteIcon fontSize="small" />
+                  <SortIcon fontSize="small" />
                 </IconButton>
               </li>
             ))}
