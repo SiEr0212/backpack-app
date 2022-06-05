@@ -70,7 +70,7 @@ function Backpack() {
    setSortedWeightList(newSortedWeightList);
 
     //list.sort((item) => item.id)
-    console.log(`sorted list ${newSortedWeightList}`);
+    console.log(`sorted list ${JSON.stringify(newSortedWeightList)}`);
   }
 
   return (
