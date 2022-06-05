@@ -28,7 +28,7 @@ function Backpack() {
   const [list, setList] = useState(initialList);
   const [name, setName] = useState("");
   const [weight, setWeight] = useState(0);
-  const [sortedWeightList, setSortedWeightList] = useState([]);
+  const [sortedWeightList, setSortedWeightList] = useState(list);
 
   let finalWeightTotal = 0;
   const weightTotal = list.map((c) => (finalWeightTotal += +c.weight));
