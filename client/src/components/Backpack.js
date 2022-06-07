@@ -39,7 +39,8 @@ function Backpack() {
   }
 
   function handleWeightChange(e) {
-    setWeight(Number(e.target.value));//turn input string into number
+    setWeight(Number(e.target.value));
+    //turn input string into number
   }
 
   function handleAdd() {
@@ -66,7 +67,7 @@ function Backpack() {
 
   function handleSortList() {
     //function to sort items by weight
-    console.log(list)
+    console.log(`handleSortList()${list.weight}`)
     /* const newSortedWeightList = sortedWeightList.sort((a, b) => a - b);
     setSortedWeightList(newSortedWeightList); */
     //todo:  I have to push all the items + weight into an array and sort that array by descending weight (or by user choice by ascending weight)
