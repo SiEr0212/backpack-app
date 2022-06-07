@@ -39,7 +39,7 @@ function Backpack() {
   }
 
   function handleWeightChange(e) {
-    setWeight(e.target.value);
+    setWeight(+e.target.value);
   }
 
   function handleAdd() {
@@ -64,9 +64,9 @@ function Backpack() {
     console.log((newList)); //backpack items and their weight
   }
 
-  function handleSortList(id) {
+  function handleSortList() {
     //function to sort items by weight
-    console.log(list.weight)
+    console.log(list)
     /* const newSortedWeightList = sortedWeightList.sort((a, b) => a - b);
     setSortedWeightList(newSortedWeightList); */
     //todo:  I have to push all the items + weight into an array and sort that array by descending weight (or by user choice by ascending weight)
