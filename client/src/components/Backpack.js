@@ -39,7 +39,7 @@ function Backpack() {
   }
 
   function handleWeightChange(e) {
-    setWeight(Number(e.target.value));
+    setWeight(Number(e.target.value));//turn inputstring into number
   }
 
   function handleAdd() {
