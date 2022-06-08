@@ -77,7 +77,7 @@ function Backpack() {
     setSortedWeightList(newSortedWeightList); */
     //const newList = list.map((items) => items.weight).sort((a, b) => b - a);
 
-    console.log(list.sort((a, b) => b.weight - a.weight));
+    const newList = list.sort((a, b) => b.weight - a.weight)
 
    /*  setList(newList);
     console.log(newList); */
