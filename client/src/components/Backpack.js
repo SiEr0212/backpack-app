@@ -79,8 +79,8 @@ function Backpack() {
 
     console.log(list.sort((a, b) => weight.age - weight.age));
 
-    setList(newList);
-    console.log(newList);
+   /*  setList(newList);
+    console.log(newList); */
   }
 
   return (
