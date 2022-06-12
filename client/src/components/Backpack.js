@@ -42,7 +42,20 @@ function Backpack() {
     //turn input string into number
   }
 
+  function handleAdd() {
+    const newList = list.concat({ weight, name, id: uuidv4() });
 
+    console.log(newList); //data I want to send to the db
+
+    setList(newList);
+
+    // initialList.push(newList)//
+    //das durch state update lösen, im moment wird ein komplettes array ins andere gepusht mit doppel items//
+
+    setName("");
+
+    console.log(initialList);
+  }
 
   function handleRemove(id) {
     const newList = list.filter((item) => item.id !== id);
@@ -57,21 +70,6 @@ function Backpack() {
     setList(newList);
     console.log(newList);
  
-  }
-
-  function handleAdd() {
-    const newList = list.concat({ weight, name, id: uuidv4() });
-
-    console.log(newList); //data I want to send to the db
-
-    setList(newList);
-
-    // initialList.push(newList)//
-    //das durch state update lösen, im moment wird ein komplettes array ins andere gepusht mit doppel items//
-
-    setName("");
-
-    console.log(initialList);
   }
 
   
