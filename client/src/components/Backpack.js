@@ -76,7 +76,7 @@ function Backpack() {
      
     }
 
-})
+}, [list])
 
 
   
