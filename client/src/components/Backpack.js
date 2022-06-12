@@ -67,18 +67,19 @@ function Backpack() {
 
 
   useEffect(() => {
+    function handleSortList() {
+      //at the moment it only updates if put in new input
+      const newList = list.sort((a, b) => b.weight - a.weight);
+      setList(newList);
+      console.log(newList);
+  
+     
+    }
 
 })
 
 
-  function handleSortList() {
-    //at the moment it only updates if put in new input
-    const newList = list.sort((a, b) => b.weight - a.weight);
-    setList(newList);
-    console.log(newList);
-
-   
-  }
+  
 
   return (
     <div class="flexContainer">
