@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
@@ -25,7 +25,7 @@ const initialList = [
 //Get the Data from Server part
 
 function Backpack() {
-  const [list, setList] = useState(initialList);
+  const [list, setList] = useEffect(initialList);
   const [name, setName] = useState("");
   const [weight, setWeight] = useState(0);
   
