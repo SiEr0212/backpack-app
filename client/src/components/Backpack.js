@@ -43,15 +43,6 @@ function Backpack() {
     //turn input string into number
   }
 
-  function handleSortList() {
-    //at the moment it only updates if put in new input
-    const newList = list.sort((a, b) => b.weight - a.weight);
-    setList(newList);
-    console.log(newList);
-
-   
-  }
-
   function handleAdd() {
     const newList = list.concat({ weight, name, id: uuidv4() });
 
@@ -76,7 +67,14 @@ function Backpack() {
 
 
   
-    
+    function handleSortList() {
+      //at the moment it only updates if put in new input
+      const newList = list.sort((a, b) => b.weight - a.weight);
+      setList(newList);
+      console.log(newList);
+  
+     
+    }
 
     useEffect(() => {}, [list])
 
