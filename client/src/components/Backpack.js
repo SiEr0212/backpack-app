@@ -28,7 +28,6 @@ function Backpack() {
   const [list, setList] = useState(initialList);
   const [name, setName] = useState("");
   const [weight, setWeight] = useState(0);
-  
 
   let finalWeightTotal = 0;
   const weightTotal = list.map((c) => (finalWeightTotal += +c.weight));
@@ -41,6 +40,23 @@ function Backpack() {
   function handleWeightChange(e) {
     setWeight(Number(e.target.value));
     //turn input string into number
+  }
+
+
+
+  function handleRemove(id) {
+    const newList = list.filter((item) => item.id !== id);
+
+    setList(newList);
+    console.log(newList); //backpack items and their weight
+  }
+  useEffect(() => {}, [list]);
+  function handleSortList() {
+    //at the moment it only updates if put in new input
+    const newList = list.sort((a, b) => b.weight - a.weight);
+    setList(newList);
+    console.log(newList);
+ 
   }
 
   function handleAdd() {
@@ -57,27 +73,6 @@ function Backpack() {
 
     console.log(initialList);
   }
-
-  function handleRemove(id) {
-    const newList = list.filter((item) => item.id !== id);
-
-    setList(newList);
-    console.log(newList); //backpack items and their weight
-  }
-
-
-  
-    function handleSortList() {
-      //at the moment it only updates if put in new input
-      const newList = list.sort((a, b) => b.weight - a.weight);
-      setList(newList);
-      console.log(newList);
-  
-     
-    }
-
-    useEffect(() => {}, [list])
-
 
   
 
