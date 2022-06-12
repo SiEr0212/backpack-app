@@ -25,7 +25,7 @@ const initialList = [
 //Get the Data from Server part
 
 function Backpack() {
-  const [list, setList] = useEffect(initialList);
+  const [list, setList] = useState(initialList);
   const [name, setName] = useState("");
   const [weight, setWeight] = useState(0);
   
