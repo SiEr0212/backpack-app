@@ -129,13 +129,7 @@ function Backpack() {
             {list.map((item) => (
               <li key={item.id}>
                 {item.name} {item.weight} g
-                <IconButton
-                  aria-label="delete"
-                  size="small"
-                  onClick={() => handleSortList()}
-                >
-                  <SortIcon fontSize="small" />
-                </IconButton>
+                
                 <IconButton
                   aria-label="delete"
                   size="small"
