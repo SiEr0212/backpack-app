@@ -63,7 +63,7 @@ function Backpack() {
     setList(newList);
     console.log(newList); //backpack items and their weight
   }
-  useEffect(() => {console.log(list)}, [list]);
+ 
 
   function handleSortList() {
     //at the moment it only updates if put in new input
@@ -72,6 +72,8 @@ function Backpack() {
     console.log(newList);
  
   }
+
+  useEffect(() => {console.log(list)}, [list]);
 
   
 
