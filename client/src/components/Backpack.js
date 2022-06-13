@@ -64,7 +64,7 @@ function Backpack() {
     console.log(newList); //backpack items and their weight
   }
 
-  function handleSortList() {
+  function handleSortList(list) {
     //at the moment it only updates if put in new input
     const newList = list.sort((a, b) => b.weight - a.weight);
     setList(newList);
