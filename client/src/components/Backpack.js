@@ -72,8 +72,8 @@ function Backpack() {
   }
 
   useEffect(() => {
+    setList(list.sort((a, b) => b.weight - a.weight))
     
-    console.log(list);
   }, [list]);
 
   return (
