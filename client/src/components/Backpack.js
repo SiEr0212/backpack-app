@@ -72,6 +72,7 @@ function Backpack() {
   }
 
   useEffect(() => {
+    
     console.log(list);
   }, [list]);
 
