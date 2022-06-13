@@ -69,7 +69,7 @@ function Backpack() {
 
     const newList = list.sort((a, b) => b.weight - a.weight);
     setList(newList);
-    console.log(newList);
+    
   }
 
   useEffect(() => {}, [list]);
