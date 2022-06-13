@@ -65,7 +65,7 @@ function Backpack() {
   }
 
   function handleSortList() {
-    //at the moment it only updates if put in new input no
+    //at the moment it only updates if put in new input
 
     const newList = list.sort((a, b) => b.weight - a.weight);
     setList(newList);
