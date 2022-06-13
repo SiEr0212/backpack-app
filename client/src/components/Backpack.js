@@ -139,7 +139,7 @@ function Backpack() {
                 <IconButton
                   aria-label="delete"
                   size="small"
-                  onClick={() => handleSortList(list)}
+                  onClick={() => handleSortList()}
                 >
                   <SortIcon fontSize="small" />
                 </IconButton>
