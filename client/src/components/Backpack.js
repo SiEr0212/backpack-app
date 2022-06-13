@@ -136,13 +136,7 @@ function Backpack() {
                 >
                   <DeleteIcon fontSize="small" />
                 </IconButton>
-                <IconButton
-                  aria-label="delete"
-                  size="small"
-                  onClick={() => handleSortList()}
-                >
-                  <SortIcon fontSize="small" />
-                </IconButton>
+                
               </li>
             ))}
           </ul>
