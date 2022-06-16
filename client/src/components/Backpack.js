@@ -71,7 +71,7 @@ function Backpack() {
     setList(newList);
   }
 
-  useEffect(() => {}, [list]);
+  
 
   return (
     <div class="flexContainer">
