@@ -71,6 +71,11 @@ function Backpack() {
     setList(newList);
   }
 
+  function handleSortListLightestFirst() {
+    const newList = [...list].sort((a, b) => b.weight - a.weight);
+    setList(newList);
+  }
+
   
 
   return (
