@@ -76,8 +76,6 @@ function Backpack() {
     setList(newList);
   }
 
-  
-
   return (
     <div class="flexContainer">
       <h1 id="backpackTitle">Backpack App</h1>
