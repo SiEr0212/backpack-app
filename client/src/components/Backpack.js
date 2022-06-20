@@ -142,14 +142,14 @@ function Backpack() {
                   aria-label="delete"
                   size="small"
                   onClick={() => handleSortListHeaviestFirst()}
-                  onDoubleClick={() => handleSortListLightestFirst}
+                  onDoubleClick={() => }
                 >
                   <SortIcon fontSize="small" />
                 </IconButton>
                 <IconButton
                   aria-label="delete"
                   size="small"
-                  onClick={() => handleSortListHeaviestFirst()}
+                  onClick={() => handleSortListLightestFirst()}
                   onDoubleClick={() => handleSortListLightestFirst}
                 >
                   <SortIcon fontSize="small" />
