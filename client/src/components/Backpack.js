@@ -142,7 +142,6 @@ function Backpack() {
                   aria-label="delete"
                   size="small"
                   onClick={() => handleSortListHeaviestFirst()}
-                  
                 >
                   <SortIcon fontSize="small" />
                 </IconButton>
