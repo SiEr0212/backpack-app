@@ -150,6 +150,7 @@ function Backpack() {
                   onClick={() => handleSortListLightestFirst()}
                 >
                   <SortIcon fontSize="small" />
+                  <h6></h6>
                 </IconButton>
               </li>
             ))}
