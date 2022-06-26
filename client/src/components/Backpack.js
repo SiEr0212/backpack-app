@@ -142,6 +142,7 @@ function Backpack() {
                   onClick={() => handleSortListHeaviestFirst()}
                 >
                   <SortIcon fontSize="small" />
+                  <br />
                   <h6>heaviest first</h6>
                 </IconButton>
                 <IconButton
