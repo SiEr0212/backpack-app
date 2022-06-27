@@ -1,7 +1,7 @@
 import React from "react";
 
 function BackpackList({ backpacks }) {
-  function renderBackpackss() {
+  function renderBackpacks() {
     return backpacks.map((customer, i) => {
       return <li key={i}>{backpacks.name}</li>;
     });
