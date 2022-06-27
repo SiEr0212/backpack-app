@@ -12,12 +12,12 @@ function Backpacks() {
   }
 
   useEffect(() => {
-    getCustomers();
+    getBackpacks();
   }, []);
 
   return (
     <div>
-      <CustomerForm getCustomers={getCustomers} />
+      <BackpackForm getCustomers={getBackpacks} />
       <CustomerList customers={customers} />
     </div>
   );
