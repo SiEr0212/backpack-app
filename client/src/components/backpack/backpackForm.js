@@ -9,10 +9,10 @@ export default function BackpackForm({ getBackpacks }) {
 
     try {
       const customerData = {
-        name: customerName,
+        name: backpackName,
       };
       await axios.post("http://localhost:5000/customer/", customerData);
-      getCustomers();
+      getBackpacks();
     } catch (err) {
       console.error(err);
     }
