@@ -6,9 +6,9 @@ import BackpackList from "./BackpackList";
 function Backpacks() {
   const [backpacks, setBackpacks] = useState([]);
 
-  async function getCustomers() {
+  async function getBackpacks() {
     const customersRes = await axios.get("http://localhost:5000/customer/");
-    setCustomers(customersRes.data);
+    setBackpacks(customersRes.data);
   }
 
   useEffect(() => {
