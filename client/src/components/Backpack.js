@@ -134,6 +134,14 @@ function Backpack() {
                   
                   <h6>heaviest first</h6>
                 </IconButton>
+                <IconButton
+                  aria-label="delete"
+                  size="small"
+                  onClick={() => handleSortListLightestFirst()}
+                >
+                  <SortIcon fontSize="small" />
+                  <h6>lightest first</h6>
+                </IconButton>
                 
           <ul style={{ listStyleType: "none" }}>
             {list.map((item) => (
