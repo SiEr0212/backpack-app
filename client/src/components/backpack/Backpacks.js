@@ -3,8 +3,8 @@ import React, { useEffect, useState } from "react";
 import BackpackForm from "./BackpackForm";
 import BackpackList from "./BackpackList";
 
-function Customers() {
-  const [customers, setCustomers] = useState([]);
+function Backpacks() {
+  const [backpacks, setBackpacks] = useState([]);
 
   async function getCustomers() {
     const customersRes = await axios.get("http://localhost:5000/customer/");
