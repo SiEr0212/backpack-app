@@ -29,7 +29,7 @@ export default function BackpackForm({ getBackpacks }) {
           }}
           value={backpackName}
         />
-        <button type="submit">Save new user</button>
+        <button type="submit">Save new backpack</button>
       </form>
     </div>
   );
