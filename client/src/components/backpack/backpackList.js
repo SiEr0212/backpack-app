@@ -1,17 +1,17 @@
 import React from "react";
 
-function CustomerList({ customers }) {
-  function renderCustomers() {
-    return customers.map((customer, i) => {
-      return <li key={i}>{customer.name}</li>;
+function BackpackList({ backpacks }) {
+  function renderBackpackss() {
+    return backpacks.map((customer, i) => {
+      return <li key={i}>{backpacks.name}</li>;
     });
   }
 
   return (
     <div>
-      <ul>{renderCustomers()}</ul>
+      <ul>{renderBackpacks()}</ul>
     </div>
   );
 }
 
-export default CustomerList;
+export default BackpackList;
