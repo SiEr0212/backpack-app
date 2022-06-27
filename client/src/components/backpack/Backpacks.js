@@ -22,3 +22,5 @@ function Backpacks() {
     </div>
   );
 }
+
+export default Backpacks;
