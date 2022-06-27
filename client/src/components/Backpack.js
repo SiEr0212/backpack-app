@@ -125,24 +125,24 @@ function Backpack() {
         style={{ display: "flex", justifyContent: "center", width: "100vw" }}
       >
         <Card variant="outlined">
-        <IconButton
-                  aria-label="delete"
-                  size="small"
-                  onClick={() => handleSortListHeaviestFirst()}
-                >
-                  <SortIcon fontSize="small" />
-                  
-                  <h6>heaviest first</h6>
-                </IconButton>
-                <IconButton
-                  aria-label="delete"
-                  size="small"
-                  onClick={() => handleSortListLightestFirst()}
-                >
-                  <SortIcon fontSize="small" />
-                  <h6>lightest first</h6>
-                </IconButton>
-                
+          <IconButton
+            aria-label="delete"
+            size="small"
+            onClick={() => handleSortListHeaviestFirst()}
+          >
+            <SortIcon fontSize="small" />
+
+            <h6>heaviest first</h6>
+          </IconButton>
+          <IconButton
+            aria-label="delete"
+            size="small"
+            onClick={() => handleSortListLightestFirst()}
+          >
+            <SortIcon fontSize="small" />
+            <h6>lightest first</h6>
+          </IconButton>
+
           <ul style={{ listStyleType: "none" }}>
             {list.map((item) => (
               <li key={item.id}>
@@ -154,8 +154,6 @@ function Backpack() {
                 >
                   <DeleteIcon fontSize="small" />
                 </IconButton>
-                
-                
               </li>
             ))}
           </ul>
