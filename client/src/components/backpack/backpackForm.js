@@ -20,12 +20,12 @@ export default function BackpackForm({ getBackpacks }) {
 
   return (
     <div>
-      <form onSubmit={saveCustomer}>
+      <form onSubmit={saveBackpack}>
         <input
           type="text"
           placeholder="username"
           onChange={(e) => {
-            setCustomerName(e.target.value);
+            setBackpackName(e.target.value);
           }}
           value={customerName}
         />
