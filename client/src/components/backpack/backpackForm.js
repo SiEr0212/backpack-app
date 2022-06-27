@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import axios from "axios";
 
 export default function BackpackForm({ getBackpacks }) {
-  const [customerName, setCustomerName] = useState("");
+  const [backpackName, setBackpackName] = useState("");
 
-  async function saveCustomer(e) {
+  async function saveBackpack(e) {
     e.preventDefault();
 
     try {
