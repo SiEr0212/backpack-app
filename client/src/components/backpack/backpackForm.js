@@ -27,7 +27,7 @@ export default function BackpackForm({ getBackpacks }) {
           onChange={(e) => {
             setBackpackName(e.target.value);
           }}
-          value={customerName}
+          value={backpackName}
         />
         <button type="submit">Save new user</button>
       </form>
