@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
-import Backpack from "./components/Backpack";
+import Backpacks from "./components/backpack/Backpacks";
 import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
 import AuthContext from "./context/AuthContext";
@@ -28,7 +28,7 @@ function Router() {
             <Route path="/customer" element={<Customers />} />
 
             <Route path="/backpack" element={<Backpack />} />
-            <Route path="/backpacks" element={<Backpack />} />
+            <Route path="/backpacks" element={<Backpacks />} />
           </>
         )}
       </Routes>
