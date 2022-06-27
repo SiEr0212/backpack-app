@@ -11,9 +11,9 @@ router.post("/", auth, async (req, res) => {
       name,
     });
 
-    const savedBackpack = await newCustomer.save();
+    const savedBackpack = await newBackpack.save();
 
-    res.json(savedCustomer);
+    res.json(savedBackpack);
   } catch (err) {
     console.error(err);
     res.status(500).send();
@@ -22,7 +22,7 @@ router.post("/", auth, async (req, res) => {
 
 router.get("/", auth, async (req, res) => {
   try {
-    const customers = await Customer.find();
+    const backpacks = await Backpack.find();
     res.json(customers);
   } catch (err) {
     console.error(err);
