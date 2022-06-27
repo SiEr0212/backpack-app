@@ -28,6 +28,7 @@ function Router() {
             <Route path="/customer" element={<Customers />} />
 
             <Route path="/backpack" element={<Backpack />} />
+            <Route path="/backpacks" element={<Backpack />} />
           </>
         )}
       </Routes>
