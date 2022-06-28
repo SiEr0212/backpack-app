@@ -7,7 +7,7 @@ Users can sign up to create an account which allows them to add items to their b
 They can add the individual weight of the items and the app sums up the weight of all the items in the backpack.
 So you're always sure not to carry more than you can handle and there's always room for optimization.
 You can sort items by heaviest or ligthest item first.
-You can save different 
+You can save different backpack
 
 The backpack-app is realized with:
 
