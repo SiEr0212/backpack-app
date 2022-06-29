@@ -152,6 +152,7 @@ function Backpack() {
                   size="small"
                   onClick={() => handleRemove(item.id)}
                 >
+                
                   <DeleteIcon fontSize="small" />
                 </IconButton>
               </li>
