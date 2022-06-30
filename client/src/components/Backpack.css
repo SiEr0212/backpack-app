@@ -52,4 +52,5 @@ body {
 
 body {
   background-color: black;
+  overflow: hidden;
 }
