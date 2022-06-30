@@ -2,6 +2,8 @@ body {
   background-image: url("../assets/backpack-pngrepo-com.png");
   background-repeat: no-repeat;
   background-position: 50%;
+  background-color: rgb(30, 29, 29);
+  overflow-x: hidden;
 }
 
 /*
