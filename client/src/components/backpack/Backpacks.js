@@ -7,7 +7,7 @@ function Backpacks() {
   const [backpacks, setBackpacks] = useState([]);
 
   async function getBackpacks() {
-    const customersRes = await axios.get("http://localhost:5000/customer/");
+    const customersRes = await axios.get("http://localhost:5000/backpacks/");
     setBackpacks(customersRes.data);
   }
 
