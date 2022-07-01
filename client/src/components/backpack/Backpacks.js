@@ -8,7 +8,7 @@ function Backpacks() {
 
   async function getBackpacks() {
     const backpacksRes = await axios.get("http://localhost:5000/backpacks/");
-    setBackpacks(customersRes.data);
+    setBackpacks(backpacksRes.data);
   }
 
   useEffect(() => {
