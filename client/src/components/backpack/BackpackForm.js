@@ -8,7 +8,7 @@ export default function BackpackForm({ getBackpacks }) {
     e.preventDefault();
 
     try {
-      const customerData = {
+      const backpackData = {
         name: backpackName,
       };
       await axios.post("http://localhost:5000/backpacks/", backpackData);
