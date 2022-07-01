@@ -17,7 +17,7 @@ function Backpacks() {
 
   return (
     <div>
-      <BackpackForm geBackpacks={getBackpacks} />
+      <BackpackForm getBackpacks={getBackpacks} />
       <BackpackList backpacks={backpacks} />
     </div>
   );
