@@ -11,7 +11,7 @@ export default function BackpackForm({ getBackpacks }) {
       const customerData = {
         name: backpackName,
       };
-      await axios.post("http://localhost:5000/backpacks/", customerData);
+      await axios.post("http://localhost:5000/backpacks/", backpackData);
       getBackpacks();
     } catch (err) {
       console.error(err);
