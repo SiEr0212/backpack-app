@@ -22,7 +22,6 @@ const initialList = [
   },
 ];
 
-//Get the Data from Server part
 
 function Backpack() {
   const [list, setList] = useState(initialList);
