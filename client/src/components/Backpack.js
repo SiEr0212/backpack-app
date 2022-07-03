@@ -22,7 +22,6 @@ const initialList = [
   },
 ];
 
-
 function Backpack() {
   const [list, setList] = useState(initialList);
   const [name, setName] = useState("");
