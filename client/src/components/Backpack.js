@@ -49,7 +49,7 @@ function Backpack() {
 
     setList(newList);
 
-    // initialList.push(newList)//
+    
     
 
     setName("");
