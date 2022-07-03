@@ -69,7 +69,6 @@ function Backpack() {
 
   function handleSortListHeaviestFirst() {
     //sorts backpack items from heaviest to ligthest
-    //to do: on second click list goes to lightest to heaviest item
     const newList = [...list].sort((a, b) => b.weight - a.weight);
     setList(newList);
   }
