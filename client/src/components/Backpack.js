@@ -54,7 +54,6 @@ function Backpack() {
         So I can store different backpacks and have acces to it with CRUD functionality
         need to habe global acces to newList Hook
   */
-    
 
     setName("");
 
