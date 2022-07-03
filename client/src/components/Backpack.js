@@ -49,7 +49,7 @@ function Backpack() {
 
     setList(newList);
 
-    //create a global backpack state with redux for example
+    //create a global backpack state with redux for example and use it in schema? 
     
 
     setName("");
