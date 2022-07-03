@@ -43,7 +43,7 @@ function Backpack() {
   function handleAdd() {
     const newList = list.concat({ weight, name, id: uuidv4() });
 
-    console.log(newList); 
+    console.log(newList);
 
     setList(newList);
 
@@ -62,7 +62,7 @@ function Backpack() {
     const newList = list.filter((item) => item.id !== id);
 
     setList(newList);
-    console.log(newList); //backpack items and their weight
+    console.log(newList);
   }
 
   function handleSortListHeaviestFirst() {
