@@ -48,6 +48,7 @@ function Backpack() {
     setList(newList);
 
     /* to do:  
+        in a
         create a global backpack state with redux or context for example and use it in schema? 
         So I can store different backpacks and have acces to it with CRUD functionality
         need to habe global acces to newList Hook */
