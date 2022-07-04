@@ -50,7 +50,7 @@ function Backpack() {
     /* to do:  
         in a first step: create a component where I store different backpacks, list of backpacks
 
-        create a global backpack state with redux or context for example and use it in schema? 
+        secons step: create a global backpack state with redux or context for example and use it in schema? 
         So I can store different backpacks and have acces to it with CRUD functionality
         need to habe global acces to newList Hook */
 
