@@ -6,7 +6,6 @@ body {
   overflow-x: hidden;
 }
 
-
 .flexContainer {
   display: flex;
   flex-direction: column;
