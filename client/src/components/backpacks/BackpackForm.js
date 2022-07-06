@@ -23,7 +23,7 @@ export default function BackpackForm({ getBackpacks }) {
       <form onSubmit={saveBackpack}>
         <input
           type="text"
-          placeholder="username"
+          placeholder="Backpackname"
           onChange={(e) => {
             setBackpackName(e.target.value);
           }}
