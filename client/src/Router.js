@@ -26,7 +26,7 @@ function Router() {
         )}
         {loggedIn === true && (
           <>
-            <Route path="/customer" element={<Customers />} />
+            
 
             <Route path="/backpack" element={<Backpack />} />
             <Route path="/backpacks" element={<Backpacks />} />
