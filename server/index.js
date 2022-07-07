@@ -14,10 +14,12 @@ app.listen(PORT, () => console.log(`Server listening on port: ${PORT}`));
 
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({
-  origin: ["http://localhost:3000"],
-  credentials: true, //to send the cookies with token = credentials
-}));
+app.use(
+  cors({
+    origin: ["http://localhost:3000"],
+    credentials: true, //to send the cookies with token = credentials
+  })
+);
 
 //connect to mongoDB
 //installesd "npm i dotenv" to acces env
