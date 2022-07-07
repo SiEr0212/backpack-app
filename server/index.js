@@ -38,4 +38,4 @@ mongoose.connect(
 app.use("/auth", require("./routers/userRouter"));
 app.use("/backpacks", require("./routers/customerRouter"));
 app.use("/customer", require("./routers/customerRouter"));
-app.use("/mybackpack", require("./routers/backpackRouter"));
+app.use("/backpack", require("./routers/backpackRouter"));
