@@ -47,7 +47,7 @@ export default function Navbar() {
             </Link>
           </Button>
           <Button variant="contained" class="navButtons">
-            <Link to="/backpack" style={{ margin: "10px", textDecoration: "none" }}>
+            <Link to="/backpack" style={{ margin: "1px", textDecoration: "none" }}>
              Add Backpack
             </Link>
           </Button>
