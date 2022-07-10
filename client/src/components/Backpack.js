@@ -20,6 +20,11 @@ const initialList = [
     name: "Tent",
     weight: 2000,
   },
+  {
+    id: "b",
+    name: "Tent",
+    weight: 2000,
+  },
 ];
 
 function Backpack() {
