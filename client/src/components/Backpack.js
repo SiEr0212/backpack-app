@@ -26,7 +26,7 @@ const initialList = [
     weight: 2000,
   },
 ];
-//to do: add a button where I save backpack under a name and this is later shown in a overview in backpacks
+
 function Backpack() {
   const [list, setList] = useState(initialList);
   const [name, setName] = useState("");
@@ -51,6 +51,8 @@ function Backpack() {
     console.log(newList);
 
     setList(newList);
+
+    //to do: add a button where I save backpack under a name and this is later shown in a overview in backpacks
 
     /* to do:  
         in a first step: create a component where I store different backpacks, list of backpacks
