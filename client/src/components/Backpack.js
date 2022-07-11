@@ -50,6 +50,7 @@ function Backpack() {
 
     console.log(newList);
 
+    
     setList(newList);
 
     //to do: add a button where I save backpack under a name and this is later shown in a overview in backpacks
