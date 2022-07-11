@@ -26,7 +26,7 @@ const initialList = [
     weight: 2000,
   },
 ];
-//to do: add a button where I save backpack under a name 
+//to do: add a button where I save backpack under a name and this is later shown in a overview in backpacks
 function Backpack() {
   const [list, setList] = useState(initialList);
   const [name, setName] = useState("");
