@@ -26,7 +26,7 @@ const initialList = [
     weight: 2000,
   },
 ];
-
+//to do: add a button where I
 function Backpack() {
   const [list, setList] = useState(initialList);
   const [name, setName] = useState("");
