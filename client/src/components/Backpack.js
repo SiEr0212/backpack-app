@@ -8,6 +8,7 @@ import ScaleIcon from "@mui/icons-material/Scale";
 import IconButton from "@mui/material/IconButton";
 import DeleteIcon from "@mui/icons-material/Delete";
 import SortIcon from "@mui/icons-material/Sort";
+import SaveOutlinedIcon from '@mui/icons-material/SaveOutlined';
 
 const initialList = [
   {
