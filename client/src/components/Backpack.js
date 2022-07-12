@@ -176,7 +176,7 @@ function Backpack() {
       <IconButton
         aria-label="delete"
         size="small"
-        /*  onClick={() => handleSortListLightestFirst()} */
+        /*  onClick={() => handleSaveBackpack()} */
       >
         <SaveOutlinedIcon fontSize="small" />
         <h6>Save Backpack</h6>
