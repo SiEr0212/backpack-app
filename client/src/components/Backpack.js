@@ -84,6 +84,11 @@ function Backpack() {
     setList(newList);
   }
 
+  function handleSortListLightestFirst() {
+    const newList = [...list].sort((a, b) => a.weight - b.weight);
+    setList(newList);
+  }
+
   return (
     <div class="flexContainer">
       <h1 id="backpackTitle">Backpack App</h1>
