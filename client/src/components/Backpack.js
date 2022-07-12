@@ -180,7 +180,7 @@ function Backpack() {
       <IconButton
         aria-label="delete"
         size="small"
-        /*  onClick={() => handleSaveBackpack()} */
+         onClick={() => handleSaveBackpack()}
       >
         <SaveOutlinedIcon fontSize="small" />
         <h5>Save Backpack</h5>
