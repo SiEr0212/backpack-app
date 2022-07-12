@@ -173,6 +173,14 @@ function Backpack() {
           Total weight: {finalWeightTotal / 1000} kg
         </h2>
       </Card>
+      <IconButton
+            aria-label="delete"
+            size="small"
+            onClick={() => handleSortListLightestFirst()}
+          >
+            <SortIcon fontSize="small" />
+            <h6>lightest first</h6>
+          </IconButton>
     </div>
   );
 }
