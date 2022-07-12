@@ -85,6 +85,7 @@ function Backpack() {
   }
 
   function handleSaveBackpack() {
+    //
    console.log("Backpack saved!")
   }
 
