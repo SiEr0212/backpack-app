@@ -179,7 +179,7 @@ function Backpack() {
         /*  onClick={() => handleSaveBackpack()} */
       >
         <SaveOutlinedIcon fontSize="small" />
-        <h6>Save Backpack</h6>
+        <h5>Save Backpack</h5>
       </IconButton>
     </div>
   );
