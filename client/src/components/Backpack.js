@@ -8,7 +8,7 @@ import ScaleIcon from "@mui/icons-material/Scale";
 import IconButton from "@mui/material/IconButton";
 import DeleteIcon from "@mui/icons-material/Delete";
 import SortIcon from "@mui/icons-material/Sort";
-import SaveOutlinedIcon from '@mui/icons-material/SaveOutlined';
+import SaveOutlinedIcon from "@mui/icons-material/SaveOutlined";
 
 const initialList = [
   {
@@ -51,7 +51,6 @@ function Backpack() {
 
     console.log(newList);
 
-    
     setList(newList);
 
     //to do: add a button where I save backpack under a name and this is later shown in a overview in backpacks
@@ -175,13 +174,13 @@ function Backpack() {
         </h2>
       </Card>
       <IconButton
-            aria-label="delete"
-            size="small"
-           /*  onClick={() => handleSortListLightestFirst()} */
-          >
-            <SaveOutlinedIcon fontSize="small" />
-            <h6>Save Backpack</h6>
-          </IconButton>
+        aria-label="delete"
+        size="small"
+        /*  onClick={() => handleSortListLightestFirst()} */
+      >
+        <SaveOutlinedIcon fontSize="small" />
+        <h6>Save Backpack</h6>
+      </IconButton>
     </div>
   );
 }
