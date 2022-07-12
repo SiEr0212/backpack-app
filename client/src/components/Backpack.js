@@ -179,7 +179,7 @@ function Backpack() {
             onClick={() => handleSortListLightestFirst()}
           >
             <SortIcon fontSize="small" />
-            <h6>lightest first</h6>
+            <h6>Save Backpack</h6>
           </IconButton>
     </div>
   );
