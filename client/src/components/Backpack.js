@@ -85,8 +85,7 @@ function Backpack() {
   }
 
   function handleSaveBackpack() {
-    const newList = [...list].sort((a, b) => a.weight - b.weight);
-    setList(newList);
+   console.log("")
   }
 
   return (
