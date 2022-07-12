@@ -85,7 +85,7 @@ function Backpack() {
   }
 
   function handleSaveBackpack() {
-    //move the current backpack to the backpacks list component
+    //save the current backpack to the backpacks list component
    console.log("Backpack saved!")
   }
 
