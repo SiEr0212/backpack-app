@@ -86,7 +86,7 @@ function Backpack() {
 
   function handleSaveBackpack() {
     //save the current backpack configuration in the backpacks list component
-   alert("Backpack saved!") // integrate a popup window with this message
+   alert("Backpack saved!") 
    console.log(list)
   }
 
