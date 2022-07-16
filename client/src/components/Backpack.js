@@ -86,8 +86,8 @@ function Backpack() {
 
   function handleSaveBackpack() {
     //save the current backpack configuration in the backpacks list component
-   alert("Backpack saved!") 
-   console.log(list)
+    alert("Backpack saved!");
+    console.log(list);
   }
 
   return (
@@ -182,7 +182,7 @@ function Backpack() {
       <IconButton
         aria-label="delete"
         size="small"
-         onClick={() => handleSaveBackpack()}
+        onClick={() => handleSaveBackpack()}
       >
         <SaveOutlinedIcon fontSize="small" />
         <h5>Save Backpack</h5>
