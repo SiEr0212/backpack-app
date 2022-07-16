@@ -24,7 +24,7 @@ const initialList = [
   {
     id: "c",
     name: "Backpack",
-    weight: 2000,
+    weight: 1500,
   },
 ];
 
