@@ -19,7 +19,7 @@ const initialList = [
   {
     id: "b",
     name: "Tent",
-    weight: 1000,
+    weight: 1300,
   },
   {
     id: "c",
