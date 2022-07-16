@@ -130,7 +130,7 @@ function Backpack() {
           onClick={handleAdd}
           style={{ margin: "30px" }}
         >
-          Add to the Backpack
+          Add to Backpack
         </Button>
       </div>
       <br />
