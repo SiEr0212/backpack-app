@@ -54,8 +54,7 @@ function Backpack() {
     setList(newList);
 
    
-/* to do savebutton: add naming the different backpacks functionality
-*/
+/* to do savebutton: add naming the different backpacks functionality*/
     /* to do:  
         in a first step: create a component where I store different backpacks, list of backpacks
 
