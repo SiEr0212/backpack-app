@@ -54,7 +54,7 @@ function Backpack() {
     setList(newList);
 
    
-
+/* to do savebutton:  */
     /* to do:  
         in a first step: create a component where I store different backpacks, list of backpacks
 
