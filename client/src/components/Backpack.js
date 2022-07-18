@@ -100,7 +100,7 @@ function Backpack() {
       </h2>
       <br />
       <br />
-      <Card variant="outlined"></Card>
+      <Card variant="outlined">
       <div>
         <TextField
           id="outlined-basic"
@@ -134,6 +134,7 @@ function Backpack() {
           Add to Backpack
         </Button>
       </div>
+      </Card>
       <br />
       <br />
       <div
