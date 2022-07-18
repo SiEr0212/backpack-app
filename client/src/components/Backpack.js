@@ -174,6 +174,7 @@ function Backpack() {
           </ul>
         </Card>
       </div>
+      <br />
       <Card variant="outlined">
         <h2 style={{ display: "flex", justifyContent: "center" }}>
           <ScaleIcon></ScaleIcon>
