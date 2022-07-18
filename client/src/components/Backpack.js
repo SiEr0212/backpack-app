@@ -124,7 +124,7 @@ function Backpack() {
             onChange={handleWeightChange}
             style={{ margin: "10px" }}
           />
-          <Button
+          <IconButton
             variant="contained"
             type="button"
             onClick={handleAdd}
@@ -132,7 +132,7 @@ function Backpack() {
             size="large"
           >
             Add to Backpack
-          </Button>
+          </IconButton>
         </div>
       </Card>
       <br />
