@@ -125,8 +125,7 @@ function Backpack() {
             style={{ margin: "10px" }}
           />
           <IconButton
-          aria-label="delete"
-          size="small"
+            aria-label="delete"
             variant="contained"
             type="button"
             onClick={handleAdd}
