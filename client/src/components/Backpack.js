@@ -53,7 +53,6 @@ function Backpack() {
 
     setList(newList);
 
-   
     /* to do savebutton: add naming the different backpacks functionality (inputfield)*/
     /* to do:  
         in a first step: create a component where I store different backpacks, list of backpacks
@@ -101,39 +100,39 @@ function Backpack() {
       <br />
       <br />
       <Card variant="outlined">
-      <div>
-        <TextField
-          id="outlined-basic"
-          label="Item name"
-          variant="outlined"
-          color="secondary"
-          placeholder="Please enter Item name"
-          sx={{ bgcolor: "white" }}
-          type="text"
-          value={name}
-          onChange={handleChange}
-          style={{ margin: "10px" }}
-        />
-        <TextField
-          id="outlined-basic"
-          label="Item Weight in gramms"
-          variant="outlined"
-          color="secondary"
-          placeholder="Enter Item weight in g"
-          sx={{ bgcolor: "white" }}
-          value={weight}
-          onChange={handleWeightChange}
-          style={{ margin: "10px" }}
-        />
-        <Button
-          variant="contained"
-          type="button"
-          onClick={handleAdd}
-          style={{ margin: "10px" }}
-        >
-          Add to Backpack
-        </Button>
-      </div>
+        <div>
+          <TextField
+            id="outlined-basic"
+            label="Item name"
+            variant="outlined"
+            color="secondary"
+            placeholder="Please enter Item name"
+            sx={{ bgcolor: "white" }}
+            type="text"
+            value={name}
+            onChange={handleChange}
+            style={{ margin: "10px" }}
+          />
+          <TextField
+            id="outlined-basic"
+            label="Item Weight in gramms"
+            variant="outlined"
+            color="secondary"
+            placeholder="Enter Item weight in g"
+            sx={{ bgcolor: "white" }}
+            value={weight}
+            onChange={handleWeightChange}
+            style={{ margin: "10px" }}
+          />
+          <Button
+            variant="contained"
+            type="button"
+            onClick={handleAdd}
+            style={{ margin: "10px" }}
+          >
+            Add to Backpack
+          </Button>
+        </div>
       </Card>
       <br />
       <br />
