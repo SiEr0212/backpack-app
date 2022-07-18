@@ -124,8 +124,7 @@ function Backpack() {
             onChange={handleWeightChange}
             style={{ margin: "10px" }}
           />
-          <IconButton
-            aria-label="delete"
+          <Button
             variant="contained"
             type="button"
             onClick={handleAdd}
@@ -133,7 +132,7 @@ function Backpack() {
             size="large"
           >
             Add to Backpack
-          </IconButton>
+          </Button>
         </div>
       </Card>
       <br />
