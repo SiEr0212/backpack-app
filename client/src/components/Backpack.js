@@ -111,7 +111,7 @@ function Backpack() {
             type="text"
             value={name}
             onChange={handleChange}
-            style={{ margin: "10px" }}
+            style={{ margin: "20px" }}
           />
           <TextField
             id="outlined-basic"
