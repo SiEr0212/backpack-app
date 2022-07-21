@@ -118,7 +118,7 @@ function Backpack() {
             label="Item Weight in gramms"
             variant="outlined"
             color="secondary"
-            placeholder="Enter Item weight in g"
+            placeholder="Ent weight in g"
             sx={{ bgcolor: "white" }}
             value={weight}
             onChange={handleWeightChange}
