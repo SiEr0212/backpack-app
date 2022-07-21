@@ -119,7 +119,7 @@ function Backpack() {
             variant="outlined"
             color="secondary"
             placeholder="Ent weight in g"
-            sx={{ bgcolor: "white" }}
+            sx={{ bgcolor: "grey" }}
             value={weight}
             onChange={handleWeightChange}
             style={{ margin: "10px" }}
