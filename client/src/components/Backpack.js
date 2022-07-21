@@ -107,7 +107,7 @@ function Backpack() {
             variant="outlined"
             color="secondary"
             placeholder="Please enter Item name"
-            sx={{ bgcolor: "white" }}
+            sx={{ bgcolor: "grey" }}
             type="text"
             value={name}
             onChange={handleChange}
