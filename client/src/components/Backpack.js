@@ -187,7 +187,7 @@ function Backpack() {
         size="small"
         onClick={() => handleSaveBackpack()}
       >
-        <SaveOutlinedIcon fontSize="medium" />
+        <SaveOutlinedIcon fontSize="small" />
         <h5>Save Backpack</h5>
       </IconButton>
     </div>
