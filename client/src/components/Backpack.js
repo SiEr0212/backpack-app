@@ -137,7 +137,9 @@ function Backpack() {
       </Card>
       <br />
       <br />
-      <div style={{ display: "flex", justifyContent: "center", width: "50vw" }}>
+      <div
+        style={{ display: "flex", justifyContent: "center", width: "100vw" }}
+      >
         <Card variant="outlined">
           <IconButton
             aria-label="delete"
