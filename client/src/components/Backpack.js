@@ -128,7 +128,7 @@ function Backpack() {
             variant="contained"
             type="button"
             onClick={handleAdd}
-            style={{ margin: "20px" }}
+            style={{ margin: "10px" }}
             size="large"
           >
             Add to Backpack
