@@ -165,7 +165,7 @@ function Backpack() {
                 {item.name} {item.weight} g
                 <IconButton
                   aria-label="delete"
-                  size="small"
+                  size="medium"
                   onClick={() => handleRemove(item.id)}
                 >
                   <DeleteIcon fontSize="small" />
