@@ -159,7 +159,7 @@ function Backpack() {
             <h6>lightest first</h6>
           </IconButton>
 
-          <ul style={{ listStyleType: "none" }} id="listBackground">
+          <ul  style={{ listStyleType: "none" }} >
             {list.map((item) => (
               <li key={item.id}>
                 {item.name} {item.weight} g
