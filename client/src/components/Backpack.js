@@ -122,7 +122,7 @@ function Backpack() {
             sx={{ bgcolor: "grey" }}
             value={weight}
             onChange={handleWeightChange}
-            style={{ margin: "10px" }}
+            style={{ margin: "20px" }}
           />
           <Button
             variant="contained"
