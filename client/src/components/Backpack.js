@@ -138,7 +138,7 @@ function Backpack() {
       <br />
       <br />
       <div
-        style={{ display: "flex", justifyContent: "center", width: "100vw" }} id="listBackground"
+        style={{ display: "flex", justifyContent: "center", width: "100vw" }} 
       >
         <Card variant="outlined">
           <IconButton
