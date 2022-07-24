@@ -100,7 +100,7 @@ function Backpack() {
       <br />
       <br />
       <Card variant="outlined">
-        <div>
+        <div id="InputFieldsBackground">
           <TextField
             id="outlined-basic"
             label="Item name"
