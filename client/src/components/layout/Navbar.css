@@ -17,7 +17,7 @@
 #logoutBtn {
   background-color: rgba(136, 255, 0, 0.87);
   border-radius: 6px;
-  border-style: 6px solid black;
+  border-style: 3px solid black;
   width: 6vw;
   height: 3vh;
   text-decoration: none;
