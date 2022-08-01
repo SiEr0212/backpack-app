@@ -1,6 +1,6 @@
 # backpack-app 
 
-:memo pencil: :school_satchel: :hiking_boot::hiking_boot: :evergreen_tree: :deciduous_tree:
+:memo_pencil: :school_satchel: :hiking_boot::hiking_boot: :evergreen_tree: :deciduous_tree:
 
 This is a web application where you can organize your backpack for hiking trips.
 Users can sign up to create an account which allows them to add items to their backpack.
