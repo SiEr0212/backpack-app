@@ -1,4 +1,4 @@
-# backpack-app :slightly_smiling_face:
+# backpack-app 
 
 :hiking_boot::hiking_boot:
 
