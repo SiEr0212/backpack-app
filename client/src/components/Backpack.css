@@ -42,7 +42,8 @@ body {
 
 #InputFieldsBackground {
   background-color: #bff5d3;
-  
+  box-shadow: 1px;
+
 
 }
 
